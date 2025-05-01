@@ -1,0 +1,21 @@
+:root {
+    --header-background: #FFFCF9;
+}
+
+header {
+    background-color: var(--header-background);
+}
+
+img {
+    width: 106px;
+}
+
+h1  {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+a {
+    font-weight: 300;
+    font-size: 24px;
+}

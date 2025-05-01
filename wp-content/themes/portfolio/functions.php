@@ -30,3 +30,11 @@ add_theme_support( 'post-thumbnails', ['travel']);
 
 // Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
 // avec un identifint spécifique dans la colonne "post_type"
+
+function register_my_menus() {
+    register_nav_menus([
+        'header-menu' => 'Menu principal',
+        'footer-menu' => 'Menu pied de page',
+    ]);
+}
+add_action('init', 'register_my_menus');
