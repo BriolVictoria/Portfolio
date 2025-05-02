@@ -3,26 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/header.css"> <!--demander si on peut faire ça ou aps -->
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>"> <!--demander si on peut faire ça ou aps -->
 </head>
 <body>
 
-<?php
-
-$logo = get_field('logo_header');
-$title = get_field('title_section_header');
-$link_decouvrir = get_field('decouvrir_header');
-$link_projets = get_field('projets_header');
-$link_contact = get_field('contact_header');
-
-?>
-
 <header>
-    <img src="<?= $logo['url'] ?>" alt="<?= $logo['alt'] ?>">
-    <h1><?= $title ?></h1>
-    <a href="/essai">Me découvrir</a>
-    <a href="<?= $link_projets['url'] ?>"><?= $link_projets['title'] ?></a>
-    <a href="<?= $link_contact['url'] ?>"><?= $link_contact['title'] ?></a>
+    <img src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Victoria Briol">
+    <h1><a href="#accueil">Victoria Briol</a></h1>
+    <a href="#decouvrir">Me découvrir</a>
+    <a href="#projets">Mes projets</a>
+    <a href="#contact">Contact</a>
+    <p>EN</p>
 </header>
 
 <main>
