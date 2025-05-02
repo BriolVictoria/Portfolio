@@ -1,6 +1,7 @@
 <?php
 
 /* Template Name: Contact */
+/*$page = 'contact'; // valeur dynamique, par exemple*/
 get_header();
 
 $titre_section_banniere = get_field('titre_section_banniere');

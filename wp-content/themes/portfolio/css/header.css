@@ -1,0 +1,18 @@
+:root {
+    --background-color: #FFFCF9;
+    --black-color: black;
+}
+
+.head {
+    background-color: var(--background-color);
+}
+
+.image {
+    width: 106px;
+}
+
+.titre {
+    font-size: 24px;
+    color: var(--black-color);
+    text-decoration: none;
+}
