@@ -1,0 +1,48 @@
+.image_banniere {
+    width: 100%;
+    position: relative;
+}
+
+.items_banniere {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrer les éléments */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.titre_banniere {
+    position: absolute;
+    font-size: 96px;
+    letter-spacing: 40px;
+    font-weight: 700;
+    color: var(--white-color);
+    width: 90%; /* ajuster la largeur ici pour forcer le texte à revenir à la ligne */
+    max-width: 800px; /* ou toute autre valeur en fonction de ton design */
+    text-align: center; /* centrer le texte */
+    top: 289px; /* position du titre */
+    left: 50%; /* centrer horizontalement */
+    transform: translateX(-50%);
+    white-space: normal; /* permet le retour à la ligne */
+    word-break: break-word; /* casse les mots trop longs */
+    margin: 0;
+}
+
+.content_banniere {
+    position: absolute;
+    font-size: 32px;
+    font-weight: 300;
+    right: 816.0px;
+    top: 518.0px;
+    color: var(--white-color);
+}
+
+.bouton_banniere {
+    position: absolute;
+    background-color: var(--white-color);
+    padding: 9.5px 52.5px;
+    color: var(--green-color);
+    top: 646.6px;
+}

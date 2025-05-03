@@ -14,10 +14,12 @@ $desc_project = get_field('description_projets');
 
 ?>
 <section>
-    <h2><?= $titre_banniere ?></h2>
-    <p><?= $desc_banniere ?></p>
-    <a href="<?=$lien_banniere['url']  ?>"><?= $lien_banniere['title'] ?></a>
-    <img src="<?= $img_banniere['url'] ?>" alt="<?= $img_banniere['alt'] ?>">
+    <img class="image_banniere" src="<?= $img_banniere['url'] ?>" alt="<?= $img_banniere['alt'] ?>">
+    <div class="items_banniere">
+        <h2 class="titre_banniere"><?= $titre_banniere ?></h2>
+        <p class="content_banniere"><?= $desc_banniere ?></p>
+        <a class="bouton_banniere" href="<?=$lien_banniere['url']  ?>"><?= $lien_banniere['title'] ?></a>
+    </div>
 </section>
 
 <section>

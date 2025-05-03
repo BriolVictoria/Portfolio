@@ -1,12 +1,15 @@
 /*import des différents fichier CSS*/
 
 @import url('header.css');
+@import url('front-page.css');
 
 /*Variables pour les couleurs*/
 
 :root {
     --background-color: #FFFCF9;
     --black-color: #000;
+    --white-color: #ffffff;
+    --green-color: #2C5551;
 }
 
 /*Import de police ainsi que des fw*/
