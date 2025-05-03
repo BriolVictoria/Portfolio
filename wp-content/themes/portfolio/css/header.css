@@ -1,18 +1,48 @@
-:root {
-    --background-color: #FFFCF9;
-    --black-color: black;
-}
+ :root {
+     --background-color: #FFFCF9;
+     --black-color: #000;
+ }
 
-.head {
-    background-color: var(--background-color);
-}
+ .head {
+     background-color: var(--background-color);
+ }
 
-.image {
-    width: 106px;
-}
+ .logo {
+     margin-left: 23px;
+ }
 
-.titre {
+a.titre {
     font-size: 24px;
-    color: var(--black-color);
     text-decoration: none;
+    color: var(--black-color);
+    font-weight: 300;
+}
+ .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.droite {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    font-size: 24px;
+}
+
+.droite>.lien {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.gauche {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.droite>p {
+    margin-right: 46px;
 }
