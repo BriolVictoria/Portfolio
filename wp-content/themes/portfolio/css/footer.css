@@ -1,0 +1,30 @@
+.titre_footer {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 22px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 18px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.footer_columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 210px;
+}
+
+.footer_columns > div {
+    flex: 1;
+    max-width: 250px;
+}
+
+footer {
+    padding: 20px;
+}
