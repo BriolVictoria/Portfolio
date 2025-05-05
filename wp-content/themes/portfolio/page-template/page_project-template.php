@@ -35,7 +35,7 @@ $description_gauche_projet = get_field('description_gauche_projet');
 
     <section class="projet">
         <div class="texte_droite_projet">
-            <h4 class="titre_par_projet"><?= $titre_droite_projet ?></h4>
+            <h4 class="titre_par_projet"> <strong class="soulignement_par_projets"><?= $titre_droite_projet ?></strong></h4>
             <p class="content_droite_projet"><?= $description_droite_projet ?></p>
         </div>
 
@@ -52,7 +52,7 @@ $description_gauche_projet = get_field('description_gauche_projet');
             <img src="<?= $image_gauche_projet['url'] ?>" alt="<?= $image_gauche_projet['alt'] ?>">
         </div>
         <div class="texte_projet">
-            <h4 class="titre_par_projet"><?= $titre_gauche_projet ?></h4>
+            <h4 class="titre_par_projet"> <strong class="soulignement_par_projets"><?= $titre_gauche_projet ?></strong></h4>
             <p class="content_gauche_projet"><?= $description_gauche_projet ?></p>
         </div>
     </section>

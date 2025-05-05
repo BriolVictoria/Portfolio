@@ -81,3 +81,14 @@
     background-color: var(--light-green-color);
     z-index: 1;
 }
+
+.titre_par_projet {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.soulignement_par_projets {
+    background-image: linear-gradient(to top, var(--light-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}
