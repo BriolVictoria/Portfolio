@@ -13,7 +13,7 @@
     <div class="items">
         <div class="gauche">
             <img class="logo" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Victoria Briol">
-            <h1><a class="titre" href="#accueil">Victoria Briol</a></h1>
+            <h1><a class="titre" href="#accueil"><strong class="soulignement">Victoria Briol</strong></a></h1>
         </div>
 
         <div class="droite">
