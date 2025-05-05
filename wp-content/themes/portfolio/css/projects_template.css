@@ -1,0 +1,26 @@
+.titre_projects {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+
+.content_projects {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 40%;
+    margin: 26px auto 0;
+}
+
+.boutons_projects {
+    font-size: 32px;
+    font-weight: 400;
+    background-color: var(--dark-green-color);
+    padding: 1px 43px;
+    color: var(--white-color);
+    text-decoration: none;
+    margin-top: 26px;
+}
+

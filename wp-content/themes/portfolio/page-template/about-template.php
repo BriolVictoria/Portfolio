@@ -25,32 +25,38 @@ $bouton = get_field('bouton_introduction');
 
 
 ?>
-    <section>
-        <img src="<?= $image_introduction['url'] ?>" alt="<?= $image_introduction['alt'] ?>">
-        <h3><?= $titre_introduction ?></h3>
-        <p><?= $description_introduction ?></p>
+    <section class="about">
+        <div class="back_image"></div>
+        <img class="image_about" src="<?= $image_introduction['url'] ?>" alt="<?= $image_introduction['alt'] ?>">
+        <div class="texte_about">
+            <h3 class="titre_about"><strong class="soulignement_about"><?= $titre_introduction ?></strong></h3>
+            <p class="content_about"><?= $description_introduction ?></p>
+        </div>
+    </section>
+
+    <!--<section>
+        <h4><?php /*= $titre_parcours */?></h4>
+        <p><?php /*= $description_parcours */?></p>
+        <img src="<?php /*= $image_parcours['url'] */?>" alt="<?php /*= $image_parcours['alt'] */?>">
+        <p><?php /*= $titre_chaque_parcours */?></p>
+        <p><?php /*= $description_chaque_parcours */?></p>
     </section>
 
     <section>
-        <h4><?= $titre_parcours ?></h4>
-        <p><?= $description_parcours ?></p>
-        <img src="<?= $image_parcours['url'] ?>" alt="<?= $image_parcours['alt'] ?>">
-        <p><?= $titre_chaque_parcours ?></p>
-        <p><?= $description_chaque_parcours ?></p>
-    </section>
+        <h4><?php /*= $titre_competences */?></h4>
+        <p><?php /*= $description_competences */?></p>
+        <img src="<?php /*= $image_competences['url'] */?>" alt="<?php /*= $image_competences['alt'] */?>">
+        <img src="<?php /*= $image_chaque_competences['url'] */?>" alt="<?php /*= $image_chaque_competences['alt'] */?>">
+        <p><?php /*= $titre_chaque_competences */?></p>
+        <p><?php /*= $description_chaque_competences */?></p>
+    </section>-->
 
-    <section>
-        <h4><?= $titre_competences ?></h4>
-        <p><?= $description_competences ?></p>
-        <img src="<?= $image_competences['url'] ?>" alt="<?= $image_competences['alt'] ?>">
-        <img src="<?= $image_chaque_competences['url'] ?>" alt="<?= $image_chaque_competences['alt'] ?>">
-        <p><?= $titre_chaque_competences ?></p>
-        <p><?= $description_chaque_competences ?></p>
-    </section>
+    <section >
+        <p class="bouton_content_about"><?= $description_bouton ?></p>
+        <div class="container">
+            <a class="bouton_about" href="<?= $bouton['url'] ?>"><?= $bouton['title'] ?></a>
+        </div>
 
-    <section>
-        <p><?= $description_bouton ?></p>
-        <a href="<?= $bouton['url'] ?>"><?= $bouton['title'] ?></a>
     </section>
 
 <?php get_footer(); ?>

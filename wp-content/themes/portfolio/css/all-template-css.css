@@ -3,6 +3,9 @@
 @import url('header.css');
 @import url('front-page.css');
 @import url('footer.css');
+@import url('about_template.css');
+@import url('projects_template.css');
+@import url('page_project_template.css');
 
 /*Variables pour les couleurs*/
 
