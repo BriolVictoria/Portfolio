@@ -12,32 +12,38 @@ $titre_formulaire = get_field('titre_formulaire');
 $champs_formulaire = get_field('champs_formulaire');
 $bouton_formulaire = get_field('bouton_formulaire');
 
-$titre_champs = get_field('titre_champs');
-$email_champs = get_field('email_champs');
-$telephone_champs = get_field('telephone_champs');
-
-
-
+$titre_champs = get_field('titre_autres');
+$email_titre_champs = get_field('email_titre_autres');
+$email_champs = get_field('email_autres');
+$telephone_titre_champs = get_field('telephone_titre_autres');
+$telephone_champs = get_field('telephone_autres');
 
 
 ?>
     <section>
-        <h2><?= $titre_section_banniere ?></h2>
-        <p><?= $description_banniere ?></p>
-        <img src="<?= $image_banniere['url'] ?>" alt="<?= $image_banniere['alt'] ?>">
+        <img class="image_banniere_contact" src="<?= $image_banniere['url'] ?>" alt="<?= $image_banniere['alt'] ?>">
+        <h2 class="titre_banniere_contact"><?= $titre_section_banniere ?></h2>
+        <p class="content_banniere_contact"><?= $description_banniere ?></p>
     </section>
 
-    <section>
-        <h3><?= $titre_formulaire ?></h3>
-        <p><?= $champs_formulaire ?></p>
-        <a href="<?= $bouton_formulaire['url'] ?>"><?= $bouton_formulaire['title'] ?></a>
+<div class="contact_columns">
+
+
+    <section class="formulaire">
+        <h3 class="titre_contact"> <strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
+        <p class="champs_contact"><?= $champs_formulaire ?></p>
+        <a class="bouton_contact" href="<?= $bouton_formulaire['url'] ?>"><?= $bouton_formulaire['title'] ?></a>
     </section>
 
-    <section>
-        <h3><?= $titre_champs ?></h3>
-        <p><?= $email_champs ?></p>
-        <p><?= $telephone_champs ?></p>
+    <section class="infos">
+        <h3 class="titre_contact"> <strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
+        <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
+        <p class="content_info_contact"><?= $email_champs ?></p>
+        <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
+        <p class="content_info_contact"><?= $telephone_champs ?></p>
     </section>
+
+</div>
 
 
 

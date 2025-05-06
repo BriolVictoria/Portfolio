@@ -33,3 +33,34 @@ footer {
     background-image: linear-gradient(to top, var(--light-green-color) 40%, transparent 40%);
     display: inline;
 }
+
+.footer_separateur {
+    border: none;
+    height: 1px; /*demander*/
+    background-color: var(--black-color);
+    width: 90%;
+    margin-top: 90px;
+   margin-bottom: 68px;
+}
+
+.blog_info {
+    margin-left: 206px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.mention {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 326px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+.infos_supp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

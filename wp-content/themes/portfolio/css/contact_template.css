@@ -1,0 +1,90 @@
+.titre_banniere_contact {
+    font-size: 54px;
+    font-weight: 700;
+    margin-top: 99px;
+    letter-spacing: 26.7px;
+    color: var(--white-color);
+    position: absolute;
+    top: 169.3px;
+    right: 331.3px;
+}
+
+.image_banniere_contact {
+    width: 100%;
+    position: relative;
+}
+
+.content_banniere_contact {
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 340.8px;
+    right: 503.2px;
+    width: 30.2%;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.titre_contact {
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 90px;
+    margin-bottom: 26px;
+    margin-left: 287px;
+    width:  100%;
+}
+
+
+.infos > .titre_contact{
+    margin-left: 0;
+}
+
+.content_info_contact {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 26px;
+
+}
+
+.champs_contact {
+    font-size: 22px;
+    font-weight: 100;
+    background-color: var(--light-green-color);
+    width: 498px;
+    padding: 12px 20px;
+    margin-left: 287px;
+}
+
+.bouton_contact {
+    background-color: var(--dark-green-color);
+    padding: 9.5px 52.5px;
+    color: var(--white-color);
+    margin-top: 26px;
+    text-decoration: none;
+    margin-left: 287px;
+}
+
+
+.contact_columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 90px;
+    gap: 400px;
+}
+
+.contact_columns section {
+    flex: 1;
+    max-width: 600px;
+}
+
+.titre_email_contact, .titre_telephone_contact{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.soulignement_contact {
+    background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}

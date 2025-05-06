@@ -1,6 +1,7 @@
 </main>
 
 <footer>
+    <hr class="footer_separateur">
     <div class="ligne_vertical"></div>
 
     <div class="footer_columns">
@@ -26,7 +27,11 @@
         <a class="content" href="#contact">Contact</a>
     </div>
     </div>
-    <p class="blog_info">© Tous droit réservé à <?= get_bloginfo('name'); ?></p>
+    <div class="infos_supp">
+        <p class="blog_info">© 2025 <?= get_bloginfo('name'); ?>. Tous droit réservé. Créé par <?= get_bloginfo('name'); ?></p>
+        <p class="mention">Mentions légales</p>
+    </div>
+
 
 </footer>
 
