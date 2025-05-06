@@ -21,10 +21,10 @@
 
     <div class="navigation">
         <h4 class="titre_footer"> <strong class="highlight">Navigation</strong></h4>
-        <a class="content" href="#accueil">Accueil</a>
-        <a class="content" href="#decouvrir">Me découvrir</a>
-        <a class="content" href="#projets">Mes projets</a>
-        <a class="content" href="#contact">Contact</a>
+        <a class="content" href="front-page.php">Accueil</a>
+        <a class="content" href="page-template/about-template.php">Me découvrir</a>
+        <a class="content" href="page-template/project-template.php">Mes projets</a>
+        <a class="content" href="page-template/contact-template.php">Contact</a>
     </div>
     </div>
     <div class="infos_supp">

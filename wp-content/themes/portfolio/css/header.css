@@ -1,4 +1,8 @@
-
+.head {
+    position: fixed;
+    z-index: 4;
+    box-shadow: 0 4px 40px var(--black-color); /* x=0, y=4px, flou=10px */;
+}
  body {
      margin: 0;
      padding: 0;
@@ -60,3 +64,52 @@ a.titre {
    background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
     display: inline;
 }
+
+
+ .burger {
+     display: none;
+     font-size: 40px;
+     margin-left: auto;
+     padding-left: 20px;
+     padding-right: 20px;
+     color: var(--green-color);
+
+ }
+
+
+ .gauche {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     flex-grow: 1;
+ }
+
+.menu_mobile {
+    display: none;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding: 10px 20px;
+}
+
+.menu_mobile .lien {
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+ .menu-mobile .langue {
+     font-size: 20px;
+     padding-top: 10px;
+     color: var(--black-color);
+ }
+
+ @media screen and (max-width: 1024px) {
+     .droite {
+         display: none;
+     }
+
+     .burger {
+         display: block;
+     }
+ }

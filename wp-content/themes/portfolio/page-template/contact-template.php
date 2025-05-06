@@ -9,7 +9,11 @@ $description_banniere = get_field('description_banniere');
 $image_banniere = get_field('image_banniere');
 
 $titre_formulaire = get_field('titre_formulaire');
-$champs_formulaire = get_field('champs_formulaire');
+$nom_champs = get_field('nom_champs');
+$prenom_champs = get_field('prenom_champs');
+$sujet_champs = get_field('sujet_champs');
+$numero_champs = get_field('numero_champs');
+$message_champs = get_field('message_champs');
 $bouton_formulaire = get_field('bouton_formulaire');
 
 $titre_champs = get_field('titre_autres');
@@ -31,7 +35,11 @@ $telephone_champs = get_field('telephone_autres');
 
     <section class="formulaire">
         <h3 class="titre_contact"> <strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
-        <p class="champs_contact"><?= $champs_formulaire ?></p>
+        <p class="champs_contact"><?= $nom_champs ?></p>
+        <p class="champs_contact"><?= $prenom_champs ?></p>
+        <p class="champs_contact"><?= $sujet_champs ?></p>
+        <p class="champs_contact"><?= $numero_champs ?></p>
+        <p class="champs_contact"><?= $message_champs ?></p>
         <a class="bouton_contact" href="<?= $bouton_formulaire['url'] ?>"><?= $bouton_formulaire['title'] ?></a>
     </section>
 

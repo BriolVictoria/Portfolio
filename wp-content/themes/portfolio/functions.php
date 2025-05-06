@@ -1,5 +1,7 @@
 <?php
 
+//Début "installation" Gutenberg
+
 // Gutenberg est le nouvelle éditeur de contenu propre à wordPress
 // il ne nous intérresse pas pour l'utilisation du thème que
 // nous allons créer. On va le désactiver :
@@ -20,15 +22,40 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_dequeue_style( 'global-styles' );
 }, 20 );
 
+//Fin "installation" Gutenberg
+
+/*
+
+//Début post-type
 
 // Activer l'utilisation des vignettes (images de couverture) sur nos post_type
-add_theme_support( 'post-thumbnails', ['recipe']);
-
-// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
-add_theme_support( 'post-thumbnails', ['travel']);
-
+add_theme_support('post-thumbnails', ['card']);
 
 // Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
+// avec un identifint spécifique dans la colonne "post_type"
+
+register_post_type('card', [
+   'label' => 'Cartes',
+    'description' => 'Cartes représentant certain projet',
+    'menu_position' => 3,
+    'menu_icon' => 'dashicons-screenoptions',
+    'public' => true,
+    'rewrite' => [
+      'slug' => 'cartes'
+    ],
+    'supports' => ['title', 'excerpt', 'editor', 'thumbnail'],
+]);
+
+//Fin post-type
+
+
+
+
+
+
+
+
+/*Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
 // avec un identifint spécifique dans la colonne "post_type"
 
 function register_my_menus() {
@@ -37,4 +64,5 @@ function register_my_menus() {
         'footer-menu' => 'Menu pied de page',
     ]);
 }
-add_action('init', 'register_my_menus');
+add_action('init', 'register_my_menus');*/
+

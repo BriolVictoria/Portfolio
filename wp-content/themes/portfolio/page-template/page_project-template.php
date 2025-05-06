@@ -18,6 +18,11 @@ $titre_gauche_projet = get_field('titre_chaque_gauche_projet');
 $description_gauche_projet = get_field('description_gauche_projet');
 
 ?>
+
+<?php
+// On ouvre "la boucle" (The loop), la structure de contrôle de contenu propre à WordPress:
+if(have_posts()): while (have_posts()): the_post(); ?>
+
     <h3 class="titre_projet"> <strong class="soulignement_projet"><?= $titre_section_projet ?></strong></h3>
     <section class="projet">
         <div class="image_gauche_projet">
@@ -57,6 +62,11 @@ $description_gauche_projet = get_field('description_gauche_projet');
         </div>
     </section>
 
+<?php
+    // On ferme "la boucle" (The loop)
+endwhile; else: ?>
+    <p>La page est vide.</p>
+<?php endif; ?>
 
 
 
