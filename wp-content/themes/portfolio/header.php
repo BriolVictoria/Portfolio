@@ -10,10 +10,7 @@
 <body>
 
 
-
 <header class="head">
-
-
 
 <!--   Menu caché affiché que pour tablette et tel-->
     <div class="menu_mobile" id="menu_mobile">

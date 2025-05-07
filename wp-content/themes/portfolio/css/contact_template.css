@@ -1,4 +1,4 @@
-
+/*
 .titre_banniere_contact {
     font-size: 54px;
     font-weight: 700;
@@ -11,8 +11,10 @@
 }
 
 .image_banniere_contact {
-    width: 100%;
-    position: relative;
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
 }
 
 .content_banniere_contact {
@@ -88,11 +90,8 @@
     background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
     display: inline;
     font-weight: 400;
-}
-
-/*
-
-!* === STYLES PAR DÉFAUT (DESKTOP) === *!
+}*/
+/* === STYLES PAR DÉFAUT (DESKTOP) === */
 .contact_columns {
     display: flex;
     justify-content: space-between;
@@ -113,6 +112,7 @@
     height: auto;
     display: block;
     position: relative;
+    padding-top: 80px;
 }
 
 .titre_banniere_contact {
@@ -193,7 +193,10 @@ section {
     font-weight: 400;
 }
 
-!* === TABLETTE (768px à 1024px) === *!
+
+
+
+/* === TABLETTE (768px à 1024px) === */
 @media screen and (max-width: 1024px) {
     .titre_banniere_contact {
         font-size: 36px;
@@ -223,7 +226,7 @@ section {
     }
 }
 
-!* === MOBILE (jusqu’à 767px) === *!
+/* === MOBILE (jusqu’à 767px) === */
 @media screen and (max-width: 767px) {
     .titre_banniere_contact {
         font-size: 24px;
@@ -261,4 +264,3 @@ section {
         font-size: 18px;
     }
 }
-*/

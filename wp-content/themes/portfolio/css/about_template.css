@@ -1,6 +1,6 @@
 .image_about {
     width: 371px;
-    margin-top: 130px;
+    margin-top:268.1px;
     margin-left: 237px;
     flex-shrink: 0;
     position: relative;
@@ -30,7 +30,7 @@
 
 .texte_about {
     max-width: 600px;
-    margin-top: 156px;
+    margin-top: 279.8px;
 }
 
 .back_image {
@@ -66,4 +66,22 @@
 .container {
     display: flex;
     justify-content: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image_about,
+    .back_image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .texte_about {
+        margin-top: 5vw;
+    }
 }

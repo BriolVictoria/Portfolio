@@ -1,12 +1,18 @@
 .image_banniere {
     width: 100%;
+    min-height: 100vh; /*Demander si on peut faire avec min-height*/
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .items_banniere {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centrer les éléments */
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -19,17 +25,16 @@
     letter-spacing: 40px;
     font-weight: 700;
     color: var(--white-color);
-    top: 163.0px;  /*position du titre */
-    left: 24.8%; /* centrer horizontalement */
+    top: 163.0px;
+    text-align: center;
     line-height: 10px;
-    
 }
 
 .content_banniere {
     position: absolute;
     font-size: 32px;
     font-weight: 300;
-    right: 602.6px;
+    text-align: center;
     top: 518.0px;
     color: var(--white-color);
 }
@@ -39,5 +44,139 @@
     background-color: var(--white-color);
     padding: 9.5px 52.5px;
     color: var(--green-color);
-    top: 646.6px;
+    top: 80%;
+    text-align: center;
 }
+
+.titre_project {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 90px;
+    margin-left: 218px;
+    margin-bottom: 0;
+}
+
+.description_project {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 4px;
+    margin-left: 218px;
+}
+
+.bouton_container_projet {
+    display: flex;
+    justify-content: center;
+}
+.bouton_projet {
+    background-color: var(--dark-green-color);
+    padding: 9.5px 52.5px;
+    color: var(--white-color);
+    margin-top: 26px;
+    text-decoration: none;
+}
+
+.projet_title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 26px;
+}
+
+.description_projet {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 15px;
+    width: 376px;
+}
+
+.soulignement_carte_projet {
+    background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}
+
+.soulignement_carte_par_projet {
+    background-image: linear-gradient(to top, var(--light-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}
+
+.projet_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 26px;
+    gap: 52px;
+}
+
+.projet {
+    width: 300px;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.projet:hover {
+    transform: translateY(-5px);
+}
+
+.trip_img {
+    width: 276px;
+}
+
+
+/* --------- TABLETTE (max-width: 754px) --------- */
+
+@media (max-width: 754px) {
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .texte_about {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .back_image {
+        transform: translate(10px, 10px);
+    }
+}
+
+/* --------- MOBILE (max-width: 480px) --------- */
+
+@media (max-width: 480px) {
+    .titre_about {
+        font-size: 2rem;
+    }
+
+    .content_about {
+        font-size: 1rem;
+    }
+
+    .bouton_about {
+        font-size: 1rem;
+        padding: 0.6rem 2rem;
+    }
+
+    .image_about {
+        max-width: 300px;
+    }
+
+    .back_image {
+        max-width: 260px;
+    }
+
+    .texte_about {
+        padding: 0 1rem; /* <<< AJOUTÉ ICI pour marges internes */
+    }
+
+    .about {
+        padding: 1rem; /* <<< AJOUTÉ ICI pour l’ensemble du bloc */
+    }
+}
+
+
+
+

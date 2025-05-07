@@ -66,80 +66,68 @@ footer {
     align-items: flex-end;
 }
 
-/*
 
-!* FOOTER - Version responsive améliorée *!
+/* FOOTER - Version responsive améliorée */
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1356px) {
     .footer_columns {
-        flex-direction: column;
-        padding: 40px 40px;
+        flex-wrap: wrap;
+        flex-direction: row; /* important pour faire deux colonnes */
         gap: 40px;
-        align-items: flex-start;
+        padding: 40px;
     }
 
     .footer_columns > div {
+        flex: 1 1 calc(50% - 20px); /* deux colonnes avec un gap de 40px */
+        max-width: calc(50% - 20px);
+    }
+
+    .footer_columns > div:last-child {
+        flex: 1 1 100%; /* le dernier passe en-dessous */
         max-width: 100%;
     }
 
-    .titre_footer strong {
-        font-size: 22px;
-        margin-bottom: 12px;
-        display: inline-block;
-    }
-
-    .content {
-        font-size: 18px;
-        line-height: 1.6;
-        margin-bottom: 12px;
-    }
-
-    .footer_separateur {
-        width: 100%;
-        margin-top: 60px;
-        margin-bottom: 40px;
-    }
-
-    .infos_supp {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        padding: 0 40px;
-    }
-
-    .blog_info,
-    .mention {
-        margin: 0;
+    .blog_info {
+        margin-left: 20px;
         font-size: 14px;
     }
 
     .mention {
-        align-self: flex-start;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .footer_columns {
-        padding: 30px 20px;
-        gap: 32px;
+        margin-left: 20px;
+        font-size: 14px;
     }
 
     .infos_supp {
-        padding: 0 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .titre_footer strong {
-        font-size: 20px;
+}
+
+@media screen and (max-width: 820px) {
+    .footer_columns {
+        flex-direction: column;
+        gap: 32px;
+        padding: 30px 40px;
+    }
+    .footer_columns > div {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .content {
-        font-size: 16px;
+    .blog_info {
+        margin-left: 20px;
+        font-size: 14px;
     }
 
-    .blog_info,
     .mention {
-        font-size: 13px;
-        line-height: 1.4;
+        margin-left: 20px;
+        font-size: 14px;
+
+    }
+
+    .infos_supp {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
-*/
