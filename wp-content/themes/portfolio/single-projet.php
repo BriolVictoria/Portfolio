@@ -17,8 +17,10 @@ get_header();
         $img = get_sub_field('image_page_projet');
     ?>
         <article>
+            <img src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>">
             <h3> <?= $title ?> </h3>
             <p><?= $content ?></p>
+
         </article>
         <?php
     endwhile;
