@@ -125,58 +125,6 @@
 }
 
 
-/* --------- TABLETTE (max-width: 754px) --------- */
-
-@media (max-width: 754px) {
-    .about {
-        flex-direction: column;
-        gap: 2rem;
-        padding: 1.5rem;
-    }
-
-    .texte_about {
-        text-align: center;
-        margin-top: 0;
-    }
-
-    .back_image {
-        transform: translate(10px, 10px);
-    }
-}
-
-/* --------- MOBILE (max-width: 480px) --------- */
-
-@media (max-width: 480px) {
-    .titre_about {
-        font-size: 2rem;
-    }
-
-    .content_about {
-        font-size: 1rem;
-    }
-
-    .bouton_about {
-        font-size: 1rem;
-        padding: 0.6rem 2rem;
-    }
-
-    .image_about {
-        max-width: 300px;
-    }
-
-    .back_image {
-        max-width: 260px;
-    }
-
-    .texte_about {
-        padding: 0 1rem; /* <<< AJOUTÉ ICI pour marges internes */
-    }
-
-    .about {
-        padding: 1rem; /* <<< AJOUTÉ ICI pour l’ensemble du bloc */
-    }
-}
-
 
 
 

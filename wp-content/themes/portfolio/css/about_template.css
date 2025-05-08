@@ -68,7 +68,36 @@
     justify-content: center;
 }
 
-/* MEDIA QUERIES */
+.titre_parcours, .titre_competences {
+    font-size: 28px;
+    font-weight: 400;
+    margin-left: 217px;
+    margin-top: 95px;
+    margin-bottom: 0;
+}
+
+.titre_competences {
+    margin-top: 177px;
+}
+
+.description_parcours, .description_competences {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 217px;
+    margin-top: 2px;
+}
+
+.image_parcours, .image_competences {
+    margin-top: 90px;
+    margin-left: 217px;
+    width: 180px;
+}
+
+
+
+/*
+
+!* MEDIA QUERIES *!
 @media (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -85,3 +114,4 @@
         margin-top: 5vw;
     }
 }
+*/

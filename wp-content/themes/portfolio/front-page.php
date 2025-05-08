@@ -38,9 +38,7 @@ $projects = new WP_Query([
 
     <?php if($projects->have_posts()): while($projects->have_posts()): $projects->the_post(); ?>
     <article class="projet">
-        <!--<a href="<?php /*= get_the_permalink(); */?>" class="trip__link">
-            <span class="sro">Découvrir le voyage <?php /*= get_the_title(); */?></span>
-        </a>-->
+
         <div class="projet_card">
             <figure class="trip_fig">
                 <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'trip_img']); ?>
