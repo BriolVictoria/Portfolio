@@ -34,8 +34,6 @@ $projects = new WP_Query([
 
     <div class="projet_container">
 
-
-
     <?php if($projects->have_posts()): while($projects->have_posts()): $projects->the_post(); ?>
     <article class="projet">
 
