@@ -3,7 +3,7 @@
     font-weight: 400;
     text-align: center;
     margin-top: 0;
-    padding-top: 270.0px;
+    padding-top: 200px;
     margin-bottom: 0;
 }
 
@@ -29,4 +29,30 @@
     background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
     display: inline;
     font-weight: 400;
+}
+
+.projets_page {
+    display: flex;
+    justify-content: center;
+}
+
+.projet_title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 64px;
+}
+
+.grille_projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 projets par ligne */
+    gap: 40px; /* espace entre les cartes */
+    padding: 60px 150px; /* marges à gauche et droite */
+}
+
+.projets_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

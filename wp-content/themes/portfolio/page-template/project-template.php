@@ -9,10 +9,10 @@ $bouton_projets = get_field('bouton_projets');
 
 
 $projets = new WP_Query([
-    'post_type' => 'project',
+    'post_type' => 'projet',
     'order' => 'DESC',
     'orderby' => 'date',
-    'posts_per_page' => 3,
+    'posts_per_page' => 12,
 ]);
 
 ?>
@@ -28,26 +28,28 @@ $projets = new WP_Query([
         </div>
     </section>
 
-<section>
+    <section><div class="grille_projets">
 
-    <?php if($projects->have_posts()): while($projects->have_posts()): $projects->the_post(); ?>
-        <article class="projet">
+        <?php if ($projets->have_posts()): while ($projets->have_posts()): $projets->the_post(); ?>
 
-            <div class="projet_card">
-                <figure class="trip_fig">
-                    <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'trip_img']); ?>
-                </figure>
-                <header class="projet_head">
-                    <h3 class="projet_title"><strong class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
-                </header>
-                <p class="description_projet"><?= get_the_excerpt() ?></p>
-            </div>
-        </article>
-    <?php endwhile; else: ?>
-        <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
-    <?php endif; ?>
+            <article class="projets_page">
+                <div class="projet_content">
+                    <figure class="projet_fig">
+                        <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'projet_img']); ?>
+                    </figure>
 
-</section>
+                    <h3 class="projet_title"><strong
+                                class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
+                </div>
+            </article>
+
+
+        <?php endwhile; else: ?>
+        </div>
+            <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
+        <?php endif; ?>
+
+    </section>
 
 
 <?php get_footer(); ?>
