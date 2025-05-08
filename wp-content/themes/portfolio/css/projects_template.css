@@ -3,8 +3,6 @@
     font-weight: 400;
     text-align: center;
     margin-top: 0;
-    padding-top: 200px;
-    margin-bottom: 0;
 }
 
 .content_projects {
@@ -36,11 +34,14 @@
     justify-content: center;
 }
 
-.projets_title {
+.projets_title, a {
     font-size: 24px;
     font-weight: 400;
     margin-top: 12px;
     margin-bottom: 64px;
+    text-decoration: none;
+    color: var(--black-color);
+    text-align: center;
 }
 
 .grille_projets {
