@@ -2,7 +2,8 @@
     font-size: 40px;
     font-weight: 400;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 0;
+    padding-top: 270.0px;
     margin-bottom: 0;
 }
 
@@ -21,6 +22,11 @@
     padding: 1px 43px;
     color: var(--white-color);
     text-decoration: none;
-    margin-top: 26px;
+    margin: 26px;
 }
 
+.soulignement_projets {
+    background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}

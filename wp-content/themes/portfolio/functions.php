@@ -81,6 +81,25 @@ register_post_type('competence', [
     'supports' => ['title', 'editor', 'thumbnail'],
 ]);
 
+// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
+add_theme_support('post-thumbnails', ['projet']);
+
+
+// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
+// avec un identifint spécifique dans la colonne "post_type"
+
+register_post_type('projet', [
+    'label' => 'Projets',
+    'description' => 'Listes représentant mes projets',
+    'menu_position' => 2,
+    'menu_icon' => 'dashicons-art',
+    'public' => true,
+    'rewrite' => [
+        'slug' => 'projet'
+    ],
+    'supports' => ['title', 'thumbnail'],
+]);
+
 //Fin post-type
 
 
