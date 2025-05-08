@@ -12,8 +12,8 @@ $titre_project = get_field('titre_section_projets');
 $desc_project = get_field('description_projets');
 $bouton_project = get_field('bouton_projets');
 
-$projects = new WP_Query([
-    'post_type' => 'project',
+$projets = new WP_Query([
+    'post_type' => 'projet',
     'order' => 'DESC',
     'orderby' => 'date',
     'posts_per_page' => 3,
@@ -34,7 +34,7 @@ $projects = new WP_Query([
 
     <div class="projet_container">
 
-    <?php if($projects->have_posts()): while($projects->have_posts()): $projects->the_post(); ?>
+    <?php if($projets->have_posts()): while($projets->have_posts()): $projets->the_post(); ?>
     <article class="projet">
 
         <div class="projet_card">

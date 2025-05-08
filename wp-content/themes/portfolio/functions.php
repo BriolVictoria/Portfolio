@@ -28,24 +28,6 @@ add_action( 'wp_enqueue_scripts', function() {
 
 //Début post-type
 
-// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
-add_theme_support('post-thumbnails', ['project']);
-
-// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
-// avec un identifint spécifique dans la colonne "post_type"
-
-register_post_type('project', [
-   'label' => 'Projets',
-    'description' => 'Cartes représentant certain projet',
-    'menu_position' => 2,
-    'menu_icon' => 'dashicons-screenoptions',
-    'public' => true,
-    'rewrite' => [
-      'slug' => 'project'
-    ],
-    'supports' => ['title', 'excerpt', 'editor', 'thumbnail'],
-]);
-
 
 // Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
 // avec un identifint spécifique dans la colonne "post_type"
@@ -97,7 +79,7 @@ register_post_type('projet', [
     'rewrite' => [
         'slug' => 'projet'
     ],
-    'supports' => ['title', 'thumbnail'],
+    'supports' => ['title', 'thumbnail', 'editor', 'excerpt'],
 ]);
 
 //Fin post-type

@@ -33,14 +33,16 @@ $projets = new WP_Query([
         <?php if ($projets->have_posts()): while ($projets->have_posts()): $projets->the_post(); ?>
 
             <article class="projets_page">
+                <a href="<?= get_the_permalink() ?>">
                 <div class="projet_content">
                     <figure class="projet_fig">
                         <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'projet_img']); ?>
                     </figure>
 
-                    <h3 class="projet_title"><strong
+                    <h3 class="projets_title"><strong
                                 class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
                 </div>
+                </a>
             </article>
 
 

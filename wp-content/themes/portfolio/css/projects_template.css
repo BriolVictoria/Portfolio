@@ -36,7 +36,7 @@
     justify-content: center;
 }
 
-.projet_title {
+.projets_title {
     font-size: 24px;
     font-weight: 400;
     margin-top: 12px;
@@ -55,4 +55,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
+}
+
+.projets_page:hover {
+    transition: transform 0.2s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--dark-green-color);
 }

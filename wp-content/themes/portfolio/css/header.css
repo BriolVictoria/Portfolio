@@ -1,7 +1,8 @@
 .head {
     position: fixed;
     z-index: 4;
-    box-shadow: 0 4px 40px var(--black-color); /* x=0, y=4px, flou=10px */;
+    box-shadow: 0 4px 40px var(--header-shadow-color); /* x=0, y=4px, flou=10px */;
+
 }
  body {
      margin: 0;
@@ -11,6 +12,9 @@
  .head {
      background-color: var(--background-color);
      width: 100%;
+ }
+ main{
+     padding-top: 200px;
  }
 
  .logo {
