@@ -23,20 +23,36 @@
     <div class="items">
         <div class="gauche">
             <img class="logo" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Victoria Briol">
-            <h1><a class="titre" href="./front-page.php"><strong class="soulignement">Victoria Briol</strong></a></h1>
+            <h1>
+                <a class="titre" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <strong class="soulignement">Victoria Briol</strong>
+                </a>
+            </h1>
 
-          <!-- Affiché que pour tablette et tel-->
+
+            <!-- Affiché que pour tablette et tel-->
             <div class="burger" id="burger">
                 &#9776;
             </div>
         </div>
 
-        <div class="droite">
+        <!--<div class="droite">
             <a class="lien" href="./page-template/about-template.php">Me découvrir</a>
             <a class="lien" href="./page-template/project-template.php">Mes projets</a>
             <a class="lien" href="./page-template/contact-template.php">Contact</a>
-            <p class="langue">EN</p>
-        </div>
+
+        </div>-->
+        <ul class="droite">
+            <?php foreach (dw_get_navigation_links('header-menu') as $link):?>
+                <li class="lien">
+                    <a href="<?= $link->href  ?>" class="lien"><?= $link->label;?></a>
+                </li>
+            <?php endforeach; ?>
+            <li>
+
+        <p class="langue">EN</p>
+            </li>
+        </ul>
     </div>
 </header>
 
@@ -44,10 +60,4 @@
 
 
 
-    <!--<ul class="nav_container">
-        <?php /*foreach (dw_get_navigation_links('header') as $link): */?>
-            <li class="nav_item nav_item--<?php /*= $link->icon; */?>">
-                <a href="<?php /*=$link->href  */?>" class="nav_link"><?php /*= $link->label; */?></a>
-            </li>
-        <?php /*endforeach; */?>
-    </ul>-->
+

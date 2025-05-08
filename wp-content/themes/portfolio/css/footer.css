@@ -6,6 +6,7 @@
     margin-bottom: 18px;
     color: var(--black-color);
     text-decoration: none;
+    padding: 0;
 }
 
 .footer_columns {

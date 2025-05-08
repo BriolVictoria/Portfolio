@@ -36,6 +36,7 @@ a.titre {
 
 
 .droite {
+    list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -43,7 +44,7 @@ a.titre {
     font-size: 24px;
 }
 
-.droite>.lien {
+.lien {
     text-decoration: none;
     color: var(--black-color);
 }
