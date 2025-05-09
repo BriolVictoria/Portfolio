@@ -16,7 +16,7 @@ $projets = new WP_Query([
 ]);
 
 ?>
-    <section>
+    <section class="projet_template">
         <h3 class="titre_projects"><strong class="soulignement_about"><?= $titre_section_projets ?></strong></h3>
         <p class="content_projects"><?= $description_projets ?></p>
         <div class="container">
@@ -39,7 +39,7 @@ $projets = new WP_Query([
                         <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'projet_img']); ?>
                     </figure>
 
-                    <h3 class="projets_title"><strong
+                    <h3 class="projets_title_page"><strong
                                 class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
                 </div>
                 </a>

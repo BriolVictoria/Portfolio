@@ -25,7 +25,7 @@
     letter-spacing: 40px;
     font-weight: 700;
     color: var(--white-color);
-    top: 163.0px;
+    top: 52.8px;
     text-align: center;
     line-height: 10px;
 }
@@ -35,7 +35,7 @@
     font-size: 32px;
     font-weight: 300;
     text-align: center;
-    top: 518.0px;
+    top: 424.6px;
     color: var(--white-color);
 }
 
@@ -44,7 +44,7 @@
     background-color: var(--white-color);
     padding: 9.5px 52.5px;
     color: var(--green-color);
-    top: 80%;
+    top: 69%;
     text-align: center;
 }
 

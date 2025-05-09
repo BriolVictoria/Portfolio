@@ -107,6 +107,9 @@ a.titre {
      color: var(--black-color);
  }
 
+ .langue {
+     margin-right: 40px;
+ }
 
 
 @media screen and (max-width: 1024px) {

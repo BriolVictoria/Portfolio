@@ -1,3 +1,4 @@
+/*
 .titre_par_projet {
     font-size: 36px;
     font-weight: 400;
@@ -29,3 +30,142 @@
     font-weight: 400;
 }
 
+.projet_box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.projet_texte {
+    max-width: 600px;
+    flex: 1;
+}
+
+.image_projet {
+    width: 371px;
+    flex-shrink: 0; !* empêche l'image de rétrécir *!
+    margin-left: 237px;
+}
+
+
+.image_container {
+    position: relative;
+    width: fit-content; !* s'ajuste à la taille de l'image *!
+}
+
+
+.back_image {
+    position: absolute;
+    top: 62.2px;
+    left: 200.6px;
+    width: 306px;
+    aspect-ratio: 306 / 248;
+    background-color: var(--light-green-color);
+    z-index: 1;
+}
+
+.projet_box {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 90px 0;
+}
+
+.image_wrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.back_image {
+    position: absolute;
+    top: 40px; !* ajuste si besoin *!
+    left: 40px; !* ajuste si besoin *!
+    width: 306px;
+    aspect-ratio: 306 / 248;
+    background-color: var(--light-green-color);
+    z-index: 1;
+}
+
+.image_projet {
+    width: 371px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+
+*/
+
+/* TITRE PRINCIPAL DE LA PAGE */
+.titre_par_projet {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 90px;
+}
+
+/* SOULIGNEMENT DANS LES TITRES */
+.soulignement_projet {
+    background-image: linear-gradient(to top, var(--light-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}
+
+/* CONTENEUR PRINCIPAL D'UN PROJET */
+.projet_box {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 90px 0;
+}
+
+/* PARTIE TEXTE D'UN PROJET */
+.projet_texte {
+    max-width: 600px;
+    flex: 1;
+}
+
+/* TITRE DE CHAQUE SECTION DE PROJET */
+.titre_section_projet {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+/* CONTENU TEXTE D'UN PROJET */
+.projet_content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* CONTENEUR IMAGE + FOND */
+.image_wrapper {
+    position: relative;
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+/* IMAGE DU PROJET */
+.image_projet {
+    width: 371px;
+    position: relative;
+    z-index: 2;
+    margin-left: 237px;
+}
+
+/* FOND VERT DERRIÈRE L'IMAGE */
+.back_image_projet {
+    position: absolute;
+    top: -32.0px;
+    left: 204.5px;
+    width: 306px;
+    aspect-ratio: 306 / 248;
+    background-color: var(--light-green-color);
+    z-index: 1;
+}

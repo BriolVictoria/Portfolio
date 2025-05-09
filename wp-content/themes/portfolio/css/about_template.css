@@ -1,6 +1,6 @@
 .image_about {
     width: 371px;
-    margin-top:268.1px;
+    margin-top:90px;
     margin-left: 237px;
     flex-shrink: 0;
     position: relative;
@@ -30,12 +30,12 @@
 
 .texte_about {
     max-width: 600px;
-    margin-top: 279.8px;
+    margin-top: 90px;
 }
 
 .back_image {
     position: absolute;
-    top: 237.9px;
+    top: 62.2px;
     left: 200.6px;
     width: 306px;
     aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/

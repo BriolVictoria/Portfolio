@@ -34,7 +34,7 @@
     justify-content: center;
 }
 
-.projets_title, a {
+.projets_title_page, a {
     font-size: 24px;
     font-weight: 400;
     margin-top: 12px;
@@ -47,8 +47,7 @@
 .grille_projets {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 projets par ligne */
-    gap: 40px; /* espace entre les cartes */
-    padding: 60px 150px; /* marges à gauche et droite */
+    padding: 60px 100px; /* marges à gauche et droite */
 }
 
 .projets_page {
@@ -56,12 +55,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
+    text-align: center;
 }
 
 .projets_page:hover {
     transition: transform 0.2s ease;
     transform: translateY(-5px);
     box-shadow: 0 0 20px var(--dark-green-color);
+}
+
+.projet_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Centre l’image et le titre horizontalement */
+}
+
+.projet_img {
+    display: block;
+    margin: 0 auto; /* ✅ Centre l’image si elle n’est pas en flex */
+    max-width: 100%; /* Bonus : s'assurer qu'elle reste responsive */
+    height: auto;
+}
+
+.projet_template {
+    margin-top: 90px;
 }

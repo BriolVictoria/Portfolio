@@ -112,7 +112,6 @@
     height: auto;
     display: block;
     position: relative;
-    padding-top: 80px;
 }
 
 .titre_banniere_contact {
@@ -150,9 +149,6 @@ section {
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 26px;
-}
-
-.infos > .titre_contact {
     margin-top: 90px;
 }
 
@@ -194,6 +190,9 @@ section {
 }
 
 
+.infos {
+    margin-left: 113px;
+}
 
 
 /* === TABLETTE (768px à 1024px) === */
@@ -223,6 +222,10 @@ section {
 
     .titre_contact {
         font-size: 28px;
+    }
+
+    .infos {
+        margin-left: 0;
     }
 }
 
@@ -263,4 +266,9 @@ section {
     .content_info_contact {
         font-size: 18px;
     }
+
+    .infos {
+        margin-left: 0;
+    }
+
 }
