@@ -1,0 +1,31 @@
+.titre_par_projet {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.image_projet {
+    width: 371px;
+}
+
+.projet_content {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 52px;
+    max-width: 600px;
+}
+
+.titre_section_projet {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 194px;
+    margin-left: 252px;
+}
+
+.soulignement_projet {
+    background-image: linear-gradient(to top, var(--light-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}
+

@@ -2,11 +2,13 @@
 get_header();
 
 ?>
-<h2><?= get_the_title(); ?></h2>
+<h2 class="titre_par_projet"><strong class="soulignement_projets"><?= get_the_title(); ?></strong></h2>
 <section>
     <h2 class="sr-only"><?= get_the_title(); ?></h2>
-    <?= get_the_post_thumbnail() ?>
-    <p><?= get_the_content() ?></p>
+    <div class="image_projet">
+        <?= get_the_post_thumbnail(null, 'medium', ['class' => 'image_projet']) ?>
+    </div>
+    <p class="projet_content"><?= get_the_content() ?></p>
 </section>
 <div>
     <?php
@@ -16,12 +18,17 @@ get_header();
         $content = get_sub_field('description_page_projet');
         $img = get_sub_field('image_page_projet');
     ?>
-        <article>
-            <img src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>">
-            <h3> <?= $title ?> </h3>
-            <p><?= $content ?></p>
 
-        </article>
+
+             <article>
+                 <div class="projet_box">
+                     <h3 class="titre_section_projet"> <strong class="soulignement_projet"><?= $title ?></strong> </h3>
+                     <p class="projet_content"><?= $content ?></p>
+                     <img class="image_projet" src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>">
+                 </div>
+
+
+             </article>
         <?php
     endwhile;
     endif;
@@ -31,3 +38,4 @@ get_header();
 
 <?php
 get_footer();
+
