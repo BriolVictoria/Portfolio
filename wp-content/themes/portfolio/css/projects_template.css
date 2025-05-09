@@ -80,3 +80,55 @@
 .projet_template {
     margin-top: 90px;
 }
+/*
+!* TABLETTE : 2 colonnes *!
+@media (max-width: 1024px) {
+    .grille_projets {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 40px;
+        gap: 32px;
+    }
+
+    .content_projects {
+        width: 70%;
+    }
+
+    .boutons_projects {
+        font-size: 24px;
+        padding: 8px 32px;
+    }
+}
+
+!* MOBILE : 1 colonne *!
+@media (max-width: 600px) {
+    .grille_projets {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 24px;
+    }
+
+    .titre_projects {
+        font-size: 28px;
+    }
+
+    .content_projects {
+        font-size: 14px;
+        width: 90%;
+        margin-top: 16px;
+    }
+
+    .boutons_projects {
+        font-size: 18px;
+        padding: 6px 24px;
+        margin: 20px 0;
+    }
+
+    .projets_title_page, a {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .projet_template {
+        margin-top: 50px;
+    }
+}*/

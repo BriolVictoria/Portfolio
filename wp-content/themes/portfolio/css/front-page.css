@@ -126,6 +126,42 @@
 }
 
 
+.description_project {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 4px;
+    max-width: 600px;
+}
+
+.projet_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projet_title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 26px;
+}
+
+.description_projet {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 90%;
+}
+
+.trip_img {
+    width: 100%;
+    max-width: 276px;
+    height: auto;
+    display: block;
+}
+
+
+
 
 
 

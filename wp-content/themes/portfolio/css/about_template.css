@@ -224,6 +224,91 @@
     margin-top: 72.3px;
 }
 
+/*
+!* Version tablette *!
+@media (max-width: 1024px) {
+    .about, .parcours, .competences {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .image_about, .back_image, .texte_about {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .texte_about {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .titre_parcours, .titre_competences,
+    .description_parcours, .description_competences,
+    .image_parcours, .image_competences,
+    .competences_par_projet,
+    .parcours_par_projet {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .competence_content {
+        justify-content: center;
+    }
+
+    .barre_horizontal_premier,
+    .barre_horizontal_deuxieme {
+        display: none;
+    }
+}
+
+!* Version mobile *!
+@media (max-width: 600px) {
+    .image_about {
+        width: 80%;
+    }
+
+    .back_image {
+        width: 70%;
+        left: 15%;
+        top: 40px;
+    }
+
+    .titre_about {
+        font-size: 28px;
+    }
+
+    .content_about,
+    .description_parcours,
+    .description_competences,
+    .description_par_competences {
+        font-size: 14px;
+    }
+
+    .bouton_content_about {
+        font-size: 16px;
+    }
+
+    .bouton_about {
+        padding: 8px 32px;
+    }
+
+    .titre_parcours, .titre_competences,
+    .title_par_parcours, .titre_par_competences {
+        font-size: 22px;
+    }
+
+    .competence_img {
+        width: 35px;
+        margin-left: 0;
+    }
+
+    .parcours, .competences {
+        padding: 0 16px;
+    }
+}*/
+
 
 
 /*
