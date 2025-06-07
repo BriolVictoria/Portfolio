@@ -1,6 +1,9 @@
 <?php
 get_header();
 
+$bouton_project = get_field('bouton_projets');
+
+
 $projets = new WP_Query([
     'post_type' => 'projet',
     'order' => 'DESC',
@@ -23,7 +26,6 @@ $projets = new WP_Query([
                 $title = get_sub_field('titre_page_projet');
                 $content = get_sub_field('description_page_projet');
                 $img = get_sub_field('image_page_projet');
-                $bouton = get_sub_field('bouton_page_projet');
                 ?>
 
 
@@ -32,7 +34,7 @@ $projets = new WP_Query([
                     <div class="projet_box">
                         <div class="image_wrapper">
                             <div class="back_image_projet"></div>
-                            <?= get_the_post_thumbnail(null, 'medium', ['class' => 'image_projet']) ?>
+                            <img class="image_projet" src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>"
                         </div>
 
                         <div class="projet_texte">
@@ -74,6 +76,7 @@ $projets = new WP_Query([
             <?php endwhile; else: ?>
                 <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
             <?php endif; ?>
+            <a class="bouton_projet" href="<?=$bouton_project['url']  ?>"><?= $bouton_project['title'] ?></a>
         </div>
        <!-- <div class="bouton_container_projet">
             <a class="bouton_projet" href="<?php /*= $bouton['url'] */?>"><?php /*= $bouton['title'] */?></a>

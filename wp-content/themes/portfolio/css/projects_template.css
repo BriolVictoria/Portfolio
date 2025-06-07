@@ -13,16 +13,25 @@
     margin: 26px auto 0;
 }
 
+
 .boutons_projects {
-    font-size: 32px;
-    font-weight: 400;
     background-color: var(--dark-green-color);
-    padding: 1px 43px;
+    padding: 9.5px 52.5px;
     color: var(--white-color);
+    margin-top: 26px;
     text-decoration: none;
-    margin: 26px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+    margin-left: 15px;
 }
 
+.boutons_projects:hover {
+    transform: scale(1.05); /* Agrandissement visuel */
+    box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
+}
 .soulignement_projets {
     background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
     display: inline;

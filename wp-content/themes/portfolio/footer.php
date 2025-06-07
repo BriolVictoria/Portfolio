@@ -9,8 +9,9 @@
 
     <div class="coordonnees">
         <h4 class="titre_footer"><strong class="highlight">Coordonnées</strong></h4>
-        <p class="content">Victoria.briol@student.hepl.be</p>
-        <p class="content">Victoriabriol5@gmail.com</p>
+            <a class="content" href="mailto:Victoria.briol@student.hepl.be">Victoria.briol@student.hepl.be</a>
+
+            <a class="content" href="mailto:Victoriabriol5@gmail.com">Victoriabriol5@gmail.com</a>
     </div>
 
     <div class="sociaux">

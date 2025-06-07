@@ -50,7 +50,7 @@ $competences = new WP_Query([
             <img class="image_parcours" src="<?= $image_parcours['url'] ?>" alt="<?= $image_parcours['alt'] ?>">
         </div>
 
-        <div class="barre_horizontal_premier"></div>
+        <!--<div class="barre_horizontal_premier"></div>-->
         <div class="parcours_droite">
             <?php if ($parcours->have_posts()): while ($parcours->have_posts()): $parcours->the_post(); ?>
                 <article class="parcours_par_projet">
@@ -75,7 +75,6 @@ $competences = new WP_Query([
             <img class="image_competences" src="<?= $image_competences['url'] ?>"
                  alt="<?= $image_competences['alt'] ?>">
         </div>
-        <div class="barre_horizontal_deuxieme"></div>
 
         <div class="competences_droite">
             <?php if ($competences->have_posts()): while ($competences->have_posts()): $competences->the_post(); ?>

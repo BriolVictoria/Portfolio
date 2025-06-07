@@ -130,7 +130,7 @@
 
 .content_banniere_contact {
     position: absolute;
-    top: 40%;
+    top: 44%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 16px;
@@ -152,13 +152,20 @@ section {
     margin-top: 90px;
 }
 
-.champs_contact {
-    font-size: 22px;
-    font-weight: 100;
+.input_champs {
     background-color: var(--light-green-color);
     width: 100%;
     padding: 12px 20px;
-    margin-bottom: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nom_champs {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .bouton_contact {
@@ -168,6 +175,15 @@ section {
     color: var(--white-color);
     text-decoration: none;
     margin-top: 26px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+}
+
+.bouton_contact:hover {
+    transform: scale(1.05); /* Agrandissement visuel */
+    box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
 }
 
 .content_info_contact {
@@ -189,9 +205,46 @@ section {
     font-weight: 400;
 }
 
+[placeholder] {
+    font-size: 16px;
+    color: var(--green-color);
+}
 
 .infos {
     margin-left: 113px;
+}
+
+.content_info_contact {
+    position: relative;
+    color: var(--green-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.content_info_contact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* ajuster selon la taille de la fonte */
+    width: 0;
+    height: 2px;
+    background-color: var(--green-color);
+    transition: width 0.3s ease;
+}
+
+.content_info_contact:hover::after,
+.content_info_contact:focus::after {
+    width: 100%;
+}
+
+.content_info_contact:hover,
+.content_info_contact:focus {
+    color: var(--green-color);
+}
+
+textarea {
+    resize: vertical;
 }
 
 

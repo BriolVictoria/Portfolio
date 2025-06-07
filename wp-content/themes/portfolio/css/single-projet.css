@@ -126,7 +126,6 @@
 /* PARTIE TEXTE D'UN PROJET */
 .projet_texte {
     max-width: 600px;
-    flex: 1;
 }
 
 /* TITRE DE CHAQUE SECTION DE PROJET */
@@ -153,7 +152,7 @@
 
 /* IMAGE DU PROJET */
 .image_projet {
-    width: 371px;
+    width: 375px;
     position: relative;
     z-index: 2;
     margin-left: 237px;
@@ -169,3 +168,4 @@
     background-color: var(--light-green-color);
     z-index: 1;
 }
+

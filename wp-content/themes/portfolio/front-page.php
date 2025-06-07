@@ -1,6 +1,4 @@
 <?php
-
-/* Template Name: Accueil */
 get_header();
 
 $titre_banniere = get_field('titre_section_banniere');
@@ -20,6 +18,7 @@ $projets = new WP_Query([
 ]);
 
 ?>
+
 <section>
     <img class="image_banniere" src="<?= $img_banniere['url'] ?>" alt="<?= $img_banniere['alt'] ?>">
     <div class="items_banniere">

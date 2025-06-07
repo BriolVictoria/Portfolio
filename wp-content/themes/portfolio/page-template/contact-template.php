@@ -30,31 +30,47 @@ $telephone_champs = get_field('telephone_autres');
         <p class="content_banniere_contact"><?= $description_banniere ?></p>
     </section>
 
-<div class="contact_columns">
+    <div class="contact_columns">
 
 
-    <section class="formulaire">
-        <h3 class="titre_contact"> <strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
-        <p class="champs_contact"><?= $nom_champs ?></p>
-        <p class="champs_contact"><?= $prenom_champs ?></p>
-        <p class="champs_contact"><?= $sujet_champs ?></p>
-        <p class="champs_contact"><?= $numero_champs ?></p>
-        <p class="champs_contact"><?= $message_champs ?></p>
-        <a class="bouton_contact" href="<?= $bouton_formulaire['url'] ?>"><?= $bouton_formulaire['title'] ?></a>
-    </section>
+        <section class="formulaire">
+            <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
+            <form action="#" method="get">
 
-    <section class="infos">
-        <h3 class="titre_contact"> <strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
-        <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
-        <p class="content_info_contact"><?= $email_champs ?></p>
-        <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
-        <p class="content_info_contact"><?= $telephone_champs ?></p>
-    </section>
+                <div>
+                    <label class="nom_champs" for="nom"><?= $nom_champs ?></label>
+                    <input class="input_champs" type="text" id="nom" name="nom" placeholder="Joe">
+                </div>
 
-</div>
+                <div>
+                    <label class="nom_champs" for="prenom"><?= $prenom_champs ?></label>
+                    <input class="input_champs" type="text" id="prenom" name="nom" placeholder="Gold">
+                </div>
+
+                <div>
+                    <label class="nom_champs" for="numero"><?= $numero_champs ?></label>
+                    <input class="input_champs" type="text" id="numero" name="nom" placeholder="0470/ 34.65.78">
+                </div>
+
+                <div>
+                    <label class="nom_champs" for="message"><?= $message_champs ?></label>
+                    <textarea class="input_champs" name="note" id="note" cols="30" rows="5" placeholder="Votre message... "></textarea>
+                </div>
+
+            </form>
+            <a class="bouton_contact" href="<?= $bouton_formulaire['url'] ?>"><?= $bouton_formulaire['title'] ?></a>
+        </section>
+
+        <section class="infos">
+            <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
+            <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
+            <a class="content_info_contact" href="mailto:<?= $email_champs ?>"><?= $email_champs ?></a>
+            <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
+            <a href="tel:<?= $telephone_champs ?>" class="content_info_contact"><?= $telephone_champs ?></a>
+        </section>
 
 
-
+    </div>
 
 
 <?php get_footer(); ?>

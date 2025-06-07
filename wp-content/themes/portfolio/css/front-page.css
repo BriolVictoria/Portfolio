@@ -28,6 +28,10 @@
     top: 52.8px;
     text-align: center;
     line-height: 10px;
+    text-shadow:
+            0 0 1px var(--white-color),
+            0 0 2px var(--white-color),
+            0 0 10px var(--white-color);
 }
 
 .content_banniere {
@@ -46,6 +50,16 @@
     color: var(--green-color);
     top: 69%;
     text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.bouton_banniere:hover {
+    background-color: var(--light-green-color);
+    color: var(--green-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--white-color), 0 0 20px var(--white-color);
+
 }
 
 .titre_project {
@@ -67,12 +81,23 @@
     display: flex;
     justify-content: center;
 }
+
 .bouton_projet {
     background-color: var(--dark-green-color);
     padding: 9.5px 52.5px;
     color: var(--white-color);
     margin-top: 26px;
     text-decoration: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+}
+
+.bouton_projet:hover {
+    transform: scale(1.05); /* Agrandissement visuel */
+    box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
 }
 
 .projet_title {
@@ -124,7 +149,6 @@
 .trip_img {
     width: 276px;
 }
-
 
 .description_project {
     font-size: 24px;

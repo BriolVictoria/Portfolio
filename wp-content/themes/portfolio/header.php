@@ -17,7 +17,7 @@
         <a class="lien" href="#decouvrir">Me découvrir</a>
         <a class="lien" href="#projets">Mes projets</a>
         <a class="lien" href="#contact">Contact</a>
-        <p class="langue">EN</p>
+        <a href="#" class="en_langue">EN</a>
     </div>
 
     <div class="items">
@@ -50,7 +50,7 @@
             <?php endforeach; ?>
             <li>
 
-        <p class="langue">EN</p>
+                <a href="#" class="en_langue">EN</a>
             </li>
         </ul>
     </div>

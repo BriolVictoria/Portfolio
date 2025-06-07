@@ -21,8 +21,6 @@ $projets = new WP_Query([
         <p class="content_projects"><?= $description_projets ?></p>
         <div class="container">
             <a class="boutons_projects" href="">Tous</a>
-            <a class="boutons_projects" href="">2D</a>
-            <a class="boutons_projects" href="">3D</a>
             <a class="boutons_projects" href="">Mobile</a>
             <a class="boutons_projects" href="">Web</a>
         </div>

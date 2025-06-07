@@ -69,6 +69,7 @@ footer {
 }
 
 
+
 /* FOOTER - Version responsive améliorée */
 
 @media screen and (max-width: 1356px) {
@@ -133,3 +134,4 @@ footer {
         align-items: flex-start;
     }
 }
+
