@@ -184,7 +184,7 @@
 }
 
 .parcours_par_projet:first-of-type .parcours_par_projet_head {
-    margin-top: 131px;
+    margin-top: 100px;
 }
 
 .parcours_par_projet:not(:first-of-type) .parcours_par_projet_head {

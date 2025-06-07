@@ -68,6 +68,15 @@ footer {
     align-items: flex-end;
 }
 
+.coordonnees a.content:hover, .navigation a.content:hover,
+.sociaux a.content:hover {
+    color: var(--green-color);          /* Change la couleur au survol (ici un rouge tomate) */
+    text-decoration: underline; /* Ajoute un soulignement */
+    transform: scale(1.05);  /* Agrandit légèrement */
+    transition: all 0.3s ease; /* Animation douce */
+}
+
+
 
 
 /* FOOTER - Version responsive améliorée */

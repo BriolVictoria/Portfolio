@@ -38,7 +38,9 @@ $projets = new WP_Query([
 
         <div class="projet_card">
             <figure class="trip_fig">
-                <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'trip_img']); ?>
+                <a href="<?= get_permalink(); ?>">
+                    <?= get_the_post_thumbnail(null, 'medium', ['class' => 'trip_img']); ?>
+                </a>
             </figure>
             <header class="projet_head">
                 <h3 class="projet_title"><strong class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
