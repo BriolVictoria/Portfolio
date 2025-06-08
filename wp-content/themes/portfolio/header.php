@@ -5,6 +5,8 @@
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
     <link rel="stylesheet" href="<?= get_template_directory_uri();?>/css/all-template-css.css?v=<?= time(); ?> " > <!--demander si on peut faire ça ou aps -->
     <script defer src="<?= get_template_directory_uri();?>/js/all-js-file.js?v=<?= time(); ?>"></script>
+    <link rel="icon" href="<?= get_site_icon_url('50') ?>">
+
 
 </head>
 <body>
