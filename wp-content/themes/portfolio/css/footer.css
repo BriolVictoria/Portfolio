@@ -50,6 +50,7 @@ footer {
     margin-left: 206px;
     font-size: 16px;
     font-weight: 100;
+    margin-bottom: 0;
 }
 
 .mention {
@@ -59,6 +60,8 @@ footer {
     margin-right: 326px;
     font-size: 16px;
     font-weight: 100;
+    border-bottom: 1px var(--black-color) solid;
+    margin-bottom: 0;
 }
 
 

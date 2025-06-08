@@ -37,7 +37,7 @@
     </div>
     <div class="infos_supp">
         <p class="blog_info">© 2025 <?= get_bloginfo('name'); ?>. Tous droit réservé. Créé par <?= get_bloginfo('name'); ?></p>
-        <p class="mention">Mentions légales</p>
+        <a href="<?= get_permalink(get_page_by_path('mentions-legales')) ?>" class="mention">Mentions légales</a>
     </div>
 
 
