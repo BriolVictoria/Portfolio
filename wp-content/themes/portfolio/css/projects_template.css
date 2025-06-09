@@ -32,6 +32,15 @@
     transform: scale(1.05); /* Agrandissement visuel */
     box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
 }
+
+.boutons_projects.active {
+    border: 2px solid var(--dark-green-color);
+    background-color: transparent;
+    color: var(--dark-green-color);
+    font-weight: bold;
+}
+
+
 .soulignement_projets {
     background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
     display: inline;

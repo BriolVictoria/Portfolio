@@ -9,15 +9,15 @@
 
     <div class="coordonnees">
         <h4 class="titre_footer"><strong class="highlight">Coordonnées</strong></h4>
-            <a title="Vers mon email" class="content" href="mailto:Victoria.briol@student.hepl.be">Victoria.briol@student.hepl.be</a>
+            <a title="Vers mon email" target="_blank" class="content" href="mailto:Victoria.briol@student.hepl.be">Victoria.briol@student.hepl.be</a>
 
-            <a title="Vers mon email personel" class="content" href="mailto:Victoriabriol5@gmail.com">Victoriabriol5@gmail.com</a>
+            <a title="Vers mon email personel" target="_blank" class="content" href="mailto:Victoriabriol5@gmail.com">Victoriabriol5@gmail.com</a>
     </div>
 
     <div class="sociaux">
         <h4 class="titre_footer"> <strong class="highlight">Réseaux sociaux</strong></h4>
-        <a title="Vers mon instagram" class="content" href="https://www.instagram.com/victoria_briol/">Instagram : victoria_briol</a>
-        <a title="Vers mon gitHub" class="content" href="https://github.com/BriolVictoria">GitHub : VictoriaBriol</a>
+        <a title="Vers mon instagram" target="_blank" class="content" href="https://www.instagram.com/victoria_briol/">Instagram : victoria_briol</a>
+        <a title="Vers mon gitHub" target="_blank" class="content" href="https://github.com/BriolVictoria">GitHub : VictoriaBriol</a>
     </div>
 
     <div class="navigation">

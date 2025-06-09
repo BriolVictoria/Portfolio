@@ -137,3 +137,32 @@ function dw_get_navigation_links(string $location): array
 
 }
 
+// Enregistrer la taxonomie personnalisée "projet_type"
+function register_projet_taxonomy() {
+    register_taxonomy('projet_type', ['projet'], [
+        'labels' => [
+            'name' => __('Types de projets'),
+            'singular_name' => __('Type de projet'),
+        ],
+        'description' => 'Types de projets',
+        'public' => true,
+        'hierarchical' => true, // comme des catégories
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'show_tagcloud' => false,
+        'rewrite' => ['slug' => 'type-de-projet'],
+    ]);
+}
+add_action('init', 'register_projet_taxonomy');
+
+// Créer des termes par défaut (à exécuter une seule fois)
+function create_projet_terms() {
+    if (!term_exists('Mobile', 'projet_type')) {
+        wp_insert_term('Mobile', 'projet_type', ['slug' => 'mobile']);
+    }
+    if (!term_exists('Web', 'projet_type')) {
+        wp_insert_term('Web', 'projet_type', ['slug' => 'web']);
+    }
+}
+add_action('init', 'create_projet_terms');
+

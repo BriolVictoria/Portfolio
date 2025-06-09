@@ -12,23 +12,18 @@ $projets = new WP_Query([
     'post__not_in' => [get_the_ID()],
 ]);
 ?>
-    <h2 class="titre_par_projet">
-        <strong class="soulignement_projets"><?= get_the_title(); ?></strong>
-    </h2>
+    <h2 class="titre_par_projet"><strong class="soulignement_projets"><?= get_the_title(); ?></strong></h2>
     <section class="projet_section">
         <h2 class="sr-only"><?= get_the_title(); ?></h2>
         <div class="projet_box header_projet">
             <div class="image_projet_container">
-                <div class="back_image_projet"></div>
                 <?= get_the_post_thumbnail(null, 'medium', ['class' => 'image_projet']) ?>
             </div>
             <div class="projet_texte">
-                <p class="projet_content"><?= get_the_content() ?></p>
+                <p class="projet_content_texte"><?= get_the_content() ?></p>
             </div>
         </div>
-
     </section>
-
     <div>
         <?php
         if (have_rows('page_projet')):
@@ -43,14 +38,14 @@ $projets = new WP_Query([
                     <div class="projet_box">
                         <div class="image_wrapper">
                             <div class="back_image_projet"></div>
-                            <img class="image_projet" src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>"/>
+                            <img class="image_projet" src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>" />
                         </div>
 
                         <div class="projet_texte">
                             <h3 class="titre_section_projet">
                                 <strong class="soulignement_projet"><?= $title ?></strong>
                             </h3>
-                            <p class="projet_content"><?= $content ?></p>
+                            <p class="projet_content_texte"><?= $content ?></p>
                         </div>
                     </div>
                 </article>
@@ -64,7 +59,7 @@ $projets = new WP_Query([
     <section>
         <div class="projet_container">
             <hr class="footer_separateur">
-            <?php if ($projets->have_posts()): while ($projets->have_posts()): $projets->the_post(); ?>
+            <?php if($projets->have_posts()): while($projets->have_posts()): $projets->the_post(); ?>
                 <article class="projet">
 
                     <div class="projet_card">
@@ -74,8 +69,7 @@ $projets = new WP_Query([
                             </a>
                         </figure>
                         <header class="projet_head">
-                            <h3 class="projet_title"><strong
-                                        class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
+                            <h3 class="projet_title"><strong class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
                         </header>
                         <p class="description_projet"><?= get_the_excerpt() ?></p>
                     </div>
@@ -85,8 +79,8 @@ $projets = new WP_Query([
             <?php endif; ?>
         </div>
 
-        <div class="bouton_container_projet">
-            <a class="bouton_projet" href="<?= $bouton_project['url'] ?>"><?= $bouton_project['title'] ?></a>
+          <div class="bouton_container_projet">
+            <a class="bouton_projet" href="<?= $bouton_project['url'] ?>"><?= $bouton_project['title']  ?></a>
         </div>
     </section>
 

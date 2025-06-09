@@ -9,6 +9,7 @@
      padding: 0;
      font-family: Inter, sans serif;
  }
+
  .head {
      background-color: var(--background-color);
      width: 100%;
@@ -81,41 +82,11 @@ a.titre {
     margin: 0;
 }
 
-
- .burger {
-     display: none;
-     font-size: 40px;
-     margin-left: auto;
-     padding-left: 20px;
-     padding-right: 50px;
-     color: var(--green-color);
- }
-
  .gauche {
      display: flex;
      align-items: center;
      gap: 20px;
      flex-grow: 1;
- }
-
-.menu_mobile {
-    display: none;
-    flex-direction: column;
-    background-color: var(--background-color);
-    padding: 10px 20px;
-}
-
-.menu_mobile .lien {
-    text-decoration: none;
-    color: var(--black-color);
-    padding: 10px 0;
-    font-size: 20px;
-}
-
- .menu-mobile .langue {
-     font-size: 20px;
-     padding-top: 10px;
-     color: var(--black-color);
  }
 
  .langue {
@@ -159,24 +130,69 @@ a.titre {
     font-weight: 700;
 }
 
-@media screen and (max-width: 1024px) {
-     .droite {
-         display: none;
-     }
 
-     .burger {
-         display: block;
-     }
- }
+.nav_bgm {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
 
-@media screen and (max-width: 460px) {
-    .soulignement {
-        font-size: 20px ;
+.nav_bgm_hidden {
+    display: none;
+}
+
+/* Navigation visible sur desktop */
+@media (min-width: 768px) {
+    .droite {
+        display: flex;
     }
-    .logo {
-        margin-left: 0;
+
+    .droite.active_nav {
+        display: flex;
+    }
+
+    .nav_bgm {
+        display: none;
     }
 }
 
+/* Navigation masquée sur mobile sauf si active */
+@media (max-width: 885px) {
+    .droite {
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 50px 0 20px 0;
+        background: var(--background-color);
+        display: flex;
+        justify-content: flex-start; /* centre verticalement */
+        margin: 0;
+    }
 
+    .droite.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .nav_bgm {
+        display: block;
+        position: relative;
+        z-index: 1000; /* Pour rester au-dessus de .droite */
+    }
+
+    .nav_bgm_hidden {
+        display: flex;
+    }
+
+}
 

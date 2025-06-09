@@ -15,41 +15,68 @@ $projets = new WP_Query([
     'posts_per_page' => 12,
 ]);
 
-?>
-    <section class="projet_template">
-        <h3 class="titre_projects"><strong class="soulignement_about"><?= $titre_section_projets ?></strong></h3>
-        <p class="content_projects"><?= $description_projets ?></p>
-        <div class="container">
-            <a class="boutons_projects" title="Tous les projets" href="">Tous</a>
-            <a class="boutons_projects" title="Les projets mobile" href="">Mobile</a>
-            <a class="boutons_projects" title="Les projets web" href="">Web</a>
-        </div>
-    </section>
+// Récupérer le filtre depuis l'URL
+$taxonomy = isset($_GET['filter']) ? sanitize_text_field($_GET['filter']) : '';
 
-    <section><div class="grille_projets">
+// Préparer la requête WP_Query
+$args = [
+    'post_type' => 'projet',
+    'posts_per_page' => -1
+];
+
+if ($taxonomy !== '') {
+    $args['tax_query'] = [
+        [
+            'taxonomy' => 'projet_type', // 🆗 Modifié ici aussi
+            'field' => 'slug',
+            'terms' => $taxonomy,
+        ]
+    ];
+}
+
+$projets = new WP_Query($args);
+?>
+
+<section class="projet_template">
+    <h3 class="titre_projects">
+        <strong class="soulignement_about"><?= esc_html($titre_section_projets ?? 'Mes projets') ?></strong>
+    </h3>
+    <p class="content_projects"><?= esc_html($description_projets ?? 'Voici une sélection de mes projets.') ?></p>
+
+    <div class="container">
+        <a class="boutons_projects <?= ($taxonomy === '') ? 'active' : '' ?>" href="?filter=">Tous</a>
+        <a class="boutons_projects <?= ($taxonomy === 'mobile') ? 'active' : '' ?>" href="?filter=mobile">Mobile</a>
+        <a class="boutons_projects <?= ($taxonomy === 'web') ? 'active' : '' ?>" href="?filter=web">Web</a>
+    </div>
+
+</section>
+
+
+<section>
+    <div class="grille_projets">
 
         <?php if ($projets->have_posts()): while ($projets->have_posts()): $projets->the_post(); ?>
 
             <article class="projets_page">
                 <a title="Vers le projet" href="<?= get_the_permalink() ?>">
-                <div class="projet_content">
-                    <figure class="projet_fig">
-                        <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'projet_img']); ?>
-                    </figure>
+                    <div class="projet_content">
+                        <figure class="projet_fig">
+                            <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'projet_img']); ?>
+                        </figure>
 
-                    <h3 class="projets_title_page"><strong
-                                class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
-                </div>
+                        <h3 class="projets_title_page"><strong
+                                    class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
+                    </div>
                 </a>
             </article>
 
 
         <?php endwhile; else: ?>
-        </div>
-            <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
-        <?php endif; ?>
+    </div>
+    <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
+    <?php endif; ?>
 
-    </section>
+</section>
 
 
 <?php get_footer(); ?>

@@ -25,7 +25,6 @@
 .projet_content {
     font-size: 16px;
     font-weight: 400;
-    width: 70%;
 }
 
 /* IMAGE DU PROJET */
@@ -47,6 +46,7 @@
     z-index: 1;
 }
 
+
 .bouton_container_projet {
     display: flex;
     justify-content: center;
@@ -59,8 +59,12 @@
 
 .projet_box {
     display: flex;
-    align-items: center; /* centre verticalement si tu veux */
-    gap: 20px; /* espace entre image et texte */
+    align-items: center; /*!* centre verticalement si tu veux *!*/
+    gap: 20px; /*!* espace entre image et texte *!*/
+}
+
+.projet_content_texte {
+    width: 478px;
 }
 
 .image_wrapper {
@@ -85,11 +89,6 @@ article:nth-of-type(odd) .back_image_projet {
 article:nth-of-type(odd) .projet_texte {
     margin-left: 252px;
 }
-
-article:nth-of-type(odd) .projet_content {
-    width: 153%;
-}
-
 
 .header_projet {
     margin-top: 66px;
