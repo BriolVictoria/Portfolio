@@ -94,3 +94,26 @@ article:nth-of-type(odd) .projet_texte {
     margin-top: 66px;
 }
 
+.lien_vers_projet {
+    font-weight: 500;
+    background-color: var(--dark-green-color);
+    padding: 9.5px 52.5px;
+    color: var(--white-color);
+    margin-top: 26px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+}
+
+.lien_projet_container {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.lien_vers_projet:hover{
+    transform: scale(1.05); /* Agrandissement visuel */
+    box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
+}
