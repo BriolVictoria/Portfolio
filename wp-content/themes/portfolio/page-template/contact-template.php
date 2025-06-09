@@ -33,6 +33,16 @@ $telephone_champs = get_field('telephone_autres');
     <div class="contact_columns">
 
 
+
+
+        <section class="infos">
+            <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
+            <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
+            <a class="content_info_contact" title="Vers mon email" href="mailto:<?= $email_champs ?>"><?= $email_champs ?></a>
+            <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
+            <a href="tel:<?= $telephone_champs ?>" title="Vers mon numéro de téléphone" class="content_info_contact"><?= $telephone_champs ?></a>
+        </section>
+
         <section class="formulaire">
             <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
             <form action="#" method="get">
@@ -60,15 +70,6 @@ $telephone_champs = get_field('telephone_autres');
             </form>
             <a class="bouton_contact" href="<?= $bouton_formulaire['url'] ?>"><?= $bouton_formulaire['title'] ?></a>
         </section>
-
-        <section class="infos">
-            <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
-            <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
-            <a class="content_info_contact" title="Vers mon email" href="mailto:<?= $email_champs ?>"><?= $email_champs ?></a>
-            <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
-            <a href="tel:<?= $telephone_champs ?>" title="Vers mon numéro de téléphone" class="content_info_contact"><?= $telephone_champs ?></a>
-        </section>
-
 
     </div>
 

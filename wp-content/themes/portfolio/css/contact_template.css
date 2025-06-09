@@ -210,10 +210,6 @@ section {
     font-weight: 200;
 }
 
-.infos {
-    margin-left: 113px;
-}
-
 .content_info_contact {
     position: relative;
     color: var(--green-color);
@@ -269,10 +265,6 @@ textarea {
         margin-top: 60px;
     }
 
-    .champs_contact, .bouton_contact {
-        width: 100%;
-    }
-
     .titre_contact {
         font-size: 28px;
     }
@@ -307,7 +299,6 @@ textarea {
     }
 
     .champs_contact, .bouton_contact {
-        width: 100%;
         padding: 10px 16px;
     }
 

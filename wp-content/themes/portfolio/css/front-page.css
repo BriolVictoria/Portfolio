@@ -1,6 +1,10 @@
 .image_banniere {
+   /* background-image: url();
+    background-size: cover;       !* Pour que l'image couvre toute la div *!
+    background-position: center;  !* Centrer l'image *!
+    background-repeat: no-repeat; !* Ne pas répéter l'image *!*/
     width: 100%;
-    min-height: 100vh; /*Demander si on peut faire avec min-height*/
+    /*min-height: 100vh;            !* Oui, min-height fonctionne très bien *!*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -186,6 +190,110 @@
     display: block;
 }
 
+/* Responsive à 885px */
+@media (max-width: 885px) {
+    .titre_banniere {
+        font-size: 48px;
+        letter-spacing: 20px;
+        top: 30px;
+        line-height: 1.2;
+    }
 
+    .content_banniere {
+        font-size: 20px;
+        top: 220px;
+        padding: 0 10px;
+    }
 
+    .bouton_banniere {
+        top: 50%;
+        padding: 8px 40px;
+        font-size: 16px;
+    }
 
+    .titre_project {
+        font-size: 28px;
+        margin-left: 1rem;
+        margin-top: 60px;
+    }
+
+    .description_project {
+        font-size: 18px;
+        margin-left: 1rem;
+        max-width: 90%;
+    }
+
+    .projet_container {
+        gap: 30px;
+    }
+
+    .projet {
+        width: 250px;
+        padding: 0.8rem;
+    }
+
+    .trip_img {
+        max-width: 220px;
+    }
+
+    .description_projet {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
+
+/* Responsive à 450px */
+@media (max-width: 450px) {
+    .titre_banniere {
+        font-size: 32px;
+        letter-spacing: 10px;
+        top: 20px;
+        line-height: 1.1;
+    }
+
+    .content_banniere {
+        font-size: 16px;
+        top: 150px;
+        padding: 0 8px;
+    }
+
+    .bouton_banniere {
+        top: 45%;
+        padding: 6px 30px;
+        font-size: 14px;
+    }
+
+    .titre_project {
+        font-size: 24px;
+        margin-left: 0.5rem;
+        margin-top: 40px;
+    }
+
+    .description_project {
+        font-size: 14px;
+        margin-left: 0.5rem;
+        max-width: 95%;
+    }
+
+    .projet_container {
+        flex-direction: column;
+        align-items: center; /* Centre les projets verticalement */
+        gap: 20px;
+    }
+
+    .projet {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .trip_img {
+        max-width: 100%;
+    }
+
+    .description_projet {
+        font-size: 14px;
+        max-width: 95%;
+    }
+}
