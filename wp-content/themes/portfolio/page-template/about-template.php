@@ -101,7 +101,7 @@ $competences = new WP_Query([
     <section>
         <p class="bouton_content_about"><?= $description_bouton ?></p>
         <div class="container">
-            <a class="bouton_about" href="<?= $bouton['url'] ?>"><?= $bouton['title'] ?></a>
+            <a class="bouton_about" title="Vers la page Contact" href="<?= $bouton['url'] ?>"><?= $bouton['title'] ?></a>
         </div>
     </section>
 

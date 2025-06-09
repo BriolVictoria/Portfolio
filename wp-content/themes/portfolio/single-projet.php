@@ -9,6 +9,7 @@ $projets = new WP_Query([
     'order' => 'DESC',
     'orderby' => 'date',
     'posts_per_page' => 3,
+    'post__not_in' => [get_the_ID()],
 ]);
 ?>
     <h2 class="titre_par_projet"><strong class="soulignement_projets"><?= get_the_title(); ?></strong></h2>
@@ -53,22 +54,20 @@ $projets = new WP_Query([
         endif;
         ?>
     </div>
-
     <section>
-
         <div class="projet_container">
             <hr class="footer_separateur">
-
-            <?php if ($projets->have_posts()): while ($projets->have_posts()): $projets->the_post(); ?>
+            <?php if($projets->have_posts()): while($projets->have_posts()): $projets->the_post(); ?>
                 <article class="projet">
 
                     <div class="projet_card">
                         <figure class="trip_fig">
-                            <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'trip_img']); ?>
+                            <a title="Vers le projet" href="<?= get_permalink(); ?>">
+                                <?= get_the_post_thumbnail(null, 'medium', ['class' => 'trip_img']); ?>
+                            </a>
                         </figure>
                         <header class="projet_head">
-                            <h3 class="projet_title"><strong
-                                        class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
+                            <h3 class="projet_title"><strong class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
                         </header>
                         <p class="description_projet"><?= get_the_excerpt() ?></p>
                     </div>
@@ -76,11 +75,11 @@ $projets = new WP_Query([
             <?php endwhile; else: ?>
                 <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
             <?php endif; ?>
-            <a class="bouton_projet" href="<?=$bouton_project['url']  ?>"><?= $bouton_project['title'] ?></a>
         </div>
-       <!-- <div class="bouton_container_projet">
-            <a class="bouton_projet" href="<?php /*= $bouton['url'] */?>"><?php /*= $bouton['title'] */?></a>
-        </div>-->
+
+          <div class="bouton_container_projet">
+            <a class="bouton_projet" href="<?= $bouton_project['url'] ?>"><?= $bouton_project['title']  ?></a>
+        </div>
     </section>
 
 

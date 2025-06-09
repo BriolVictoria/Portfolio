@@ -16,17 +16,17 @@
 
 <!--   Menu caché affiché que pour tablette et tel-->
     <div class="menu_mobile" id="menu_mobile">
-        <a class="lien" href="#decouvrir">Me découvrir</a>
-        <a class="lien" href="#projets">Mes projets</a>
-        <a class="lien" href="#contact">Contact</a>
-        <a href="#" class="en_langue">EN</a>
+        <a title="Vers la page Me découvrir" class="lien" href="#decouvrir">Me découvrir</a>
+        <a title="Vers la page Mes projets" class="lien" href="#projets">Mes projets</a>
+        <a title="Vers la page Contact" class="lien" href="#contact">Contact</a>
+        <a title="Mettre la page en anglais" href="#" class="en_langue">EN</a>
     </div>
 
     <div class="items">
         <div class="gauche">
             <img class="logo" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Victoria Briol">
             <h1>
-                <a class="titre" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <a title="Vers la page d'accueil" class="titre" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <strong class="soulignement">Victoria Briol</strong>
                 </a>
             </h1>
@@ -47,12 +47,12 @@
         <ul class="droite">
             <?php foreach (dw_get_navigation_links('header-menu') as $link):?>
                 <li class="lien">
-                    <a href="<?= $link->href  ?>" class="lien"><?= $link->label;?></a>
+                    <a title="Vers la page <?= $link->label;?>" href="<?= $link->href  ?>" class="lien"><?= $link->label;?></a>
                 </li>
             <?php endforeach; ?>
             <li>
 
-                <a href="#" class="en_langue">EN</a>
+                <a title="Mettre la page en anglais" href="#" class="en_langue">EN</a>
             </li>
         </ul>
     </div>

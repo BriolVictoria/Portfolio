@@ -24,7 +24,7 @@ $projets = new WP_Query([
     <div class="items_banniere">
         <h2 class="titre_banniere"><?= $titre_banniere ?></h2>
         <p class="content_banniere"><?= $desc_banniere ?></p>
-        <a class="bouton_banniere" href="<?=$lien_banniere['url']  ?>"><?= $lien_banniere['title'] ?></a>
+        <a title="Vers la page Me découvrir" class="bouton_banniere" href="<?=$lien_banniere['url']  ?>"><?= $lien_banniere['title'] ?></a>
     </div>
 </section>
 <section>
@@ -38,7 +38,7 @@ $projets = new WP_Query([
 
         <div class="projet_card">
             <figure class="trip_fig">
-                <a href="<?= get_permalink(); ?>">
+                <a title="Vers le projet" href="<?= get_permalink(); ?>">
                     <?= get_the_post_thumbnail(null, 'medium', ['class' => 'trip_img']); ?>
                 </a>
             </figure>
@@ -53,7 +53,7 @@ $projets = new WP_Query([
     <?php endif; ?>
     </div>
     <div class="bouton_container_projet">
-    <a class="bouton_projet" href="<?=$bouton_project['url']  ?>"><?= $bouton_project['title'] ?></a>
+    <a title="Vers la page Projets" class="bouton_projet" href="<?=$bouton_project['url']  ?>"><?= $bouton_project['title'] ?></a>
     </div>
 </section>
 

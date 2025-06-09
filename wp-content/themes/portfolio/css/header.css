@@ -36,6 +36,15 @@ a.titre {
 }
 
 
+.titre .soulignement {
+    transition: transform 0.3s ease;
+    display: inline-block; /* nécessaire uniquement pour appliquer transform */
+}
+
+.titre:hover .soulignement {
+    transform: scale(1.1); /* agrandissement au survol */
+}
+
 .droite {
     list-style: none;
     display: flex;
@@ -69,6 +78,7 @@ a.titre {
 .soulignement {
     background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
     display: inline;
+    margin: 0;
 }
 
 
@@ -167,7 +177,6 @@ a.titre {
         margin-left: 0;
     }
 }
-
 
 
 

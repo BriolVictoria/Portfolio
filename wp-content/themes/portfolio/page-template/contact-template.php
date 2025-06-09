@@ -64,9 +64,9 @@ $telephone_champs = get_field('telephone_autres');
         <section class="infos">
             <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
             <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
-            <a class="content_info_contact" href="mailto:<?= $email_champs ?>"><?= $email_champs ?></a>
+            <a class="content_info_contact" title="Vers mon email" href="mailto:<?= $email_champs ?>"><?= $email_champs ?></a>
             <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
-            <a href="tel:<?= $telephone_champs ?>" class="content_info_contact"><?= $telephone_champs ?></a>
+            <a href="tel:<?= $telephone_champs ?>" title="Vers mon numéro de téléphone" class="content_info_contact"><?= $telephone_champs ?></a>
         </section>
 
 

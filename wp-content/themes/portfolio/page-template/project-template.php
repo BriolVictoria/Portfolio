@@ -20,9 +20,9 @@ $projets = new WP_Query([
         <h3 class="titre_projects"><strong class="soulignement_about"><?= $titre_section_projets ?></strong></h3>
         <p class="content_projects"><?= $description_projets ?></p>
         <div class="container">
-            <a class="boutons_projects" href="">Tous</a>
-            <a class="boutons_projects" href="">Mobile</a>
-            <a class="boutons_projects" href="">Web</a>
+            <a class="boutons_projects" title="Tous les projets" href="">Tous</a>
+            <a class="boutons_projects" title="Les projets mobile" href="">Mobile</a>
+            <a class="boutons_projects" title="Les projets web" href="">Web</a>
         </div>
     </section>
 
@@ -31,7 +31,7 @@ $projets = new WP_Query([
         <?php if ($projets->have_posts()): while ($projets->have_posts()): $projets->the_post(); ?>
 
             <article class="projets_page">
-                <a href="<?= get_the_permalink() ?>">
+                <a title="Vers le projet" href="<?= get_the_permalink() ?>">
                 <div class="projet_content">
                     <figure class="projet_fig">
                         <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'projet_img']); ?>

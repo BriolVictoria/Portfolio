@@ -31,7 +31,6 @@
 
 .texte_about {
     max-width: 600px;
-    margin-top: 90px;
 }
 
 .back_image {
@@ -116,6 +115,10 @@
     font-weight: 300;
 }
 
+.titre_competences{
+    width: 100%;
+}
+
 .titre_par_competences {
     margin-left: 16px;
 }
@@ -166,8 +169,8 @@
 .description_par_competences {
     font-size: 16px;
     font-weight: 300;
-    margin: 0;
-    margin-top: 4px;
+    margin: 4px 0 0;
+    width: 120%;
 }
 
 .parcours {

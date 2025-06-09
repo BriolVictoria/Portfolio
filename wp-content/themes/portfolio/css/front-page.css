@@ -41,6 +41,7 @@
     text-align: center;
     top: 424.6px;
     color: var(--white-color);
+    margin: 0;
 }
 
 .bouton_banniere {
@@ -48,10 +49,11 @@
     background-color: var(--white-color);
     padding: 9.5px 52.5px;
     color: var(--green-color);
-    top: 69%;
+    top: 65%;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    margin: 0;
 }
 
 .bouton_banniere:hover {
@@ -183,8 +185,6 @@
     height: auto;
     display: block;
 }
-
-
 
 
 
