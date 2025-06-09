@@ -131,6 +131,7 @@ a.titre {
 }
 
 
+/* Style de base du bouton hamburger */
 .nav_bgm {
     background: none;
     border: none;
@@ -138,28 +139,32 @@ a.titre {
     padding: 20px;
 }
 
-.nav_bgm_hidden {
-    display: none;
+/* Style du SVG hamburger */
+.nav_bgm_svg .nav_element {
+    stroke: var(--dark-green-color); /* Personnalise ici la couleur */
+    transition: all 0.3s ease;
 }
 
-/* Navigation visible sur desktop */
-@media (min-width: 768px) {
+/* Menu visible par défaut sur desktop */
+@media (min-width: 886px) {
     .droite {
-        display: flex;
-    }
-
-    .droite.active_nav {
-        display: flex;
+        display: flex !important;
+        position: static;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+        flex-direction: row;
     }
 
     .nav_bgm {
-        display: none;
+        display: none; /* bouton caché sur desktop */
     }
 }
 
-/* Navigation masquée sur mobile sauf si active */
+/* Menu caché sur mobile (visible seulement si actif) */
 @media (max-width: 885px) {
     .droite {
+        background: var(--background-color);
         opacity: 0;
         transform: translateY(-20px);
         pointer-events: none;
@@ -174,8 +179,8 @@ a.titre {
         padding: 50px 0 20px 0;
         background: var(--background-color);
         display: flex;
-        justify-content: flex-start; /* centre verticalement */
-        margin: 0;
+        justify-content: flex-start;
+        margin: 90px 0;
     }
 
     .droite.active {
@@ -185,14 +190,8 @@ a.titre {
     }
 
     .nav_bgm {
-        display: block;
-        position: relative;
-        z-index: 1000; /* Pour rester au-dessus de .droite */
-    }
-
-    .nav_bgm_hidden {
         display: flex;
     }
-
 }
+
 

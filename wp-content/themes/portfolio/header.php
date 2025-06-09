@@ -40,18 +40,10 @@
 
         <section>
             <button class="nav_bgm" aria-expanded="false" aria-label="Menu principal" aria-controls="nav_menu">
-                <svg class="nav_bgm_svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <path class="nav_element top" d="M6 9H24" stroke-width="2" stroke="#000"/>
-                    <path class="nav_element middle" d="M6 15H24" stroke-width="2" stroke="#000"/>
-                    <path class="nav_element bottom" d="M6 21H24" stroke-width="2" stroke="#000"/>
-                </svg>
-            </button>
-
-            <button class="nav_bgm_hidden" aria-expanded="false" aria-label="Menu principal" aria-controls="nav_menu" style="display:none;">
-                <svg class="nav_bgm_svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 7L23 23" stroke="#2C5551" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M7 23L23 7" stroke="#2C5551" stroke-width="2" stroke-linecap="round"/>
+                <svg class="nav_bgm_svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="nav_element" d="M6.25 9.30469H23.75" stroke-width="2"/>
+                    <path class="nav_element" d="M6.25 15.554H23.75" stroke-width="2"/>
+                    <path class="nav_element" d="M6.25 21.8347H23.75" stroke-width="2"/>
                 </svg>
             </button>
         </section>
