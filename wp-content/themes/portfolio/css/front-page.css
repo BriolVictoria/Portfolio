@@ -192,29 +192,11 @@
 
 /* Responsive à 885px */
 @media (max-width: 885px) {
-    .titre_banniere {
-        font-size: 48px;
-        letter-spacing: 20px;
-        top: 30px;
-        line-height: 1.2;
-    }
-
-    .content_banniere {
-        font-size: 20px;
-        top: 220px;
-        padding: 0 10px;
-    }
-
-    .bouton_banniere {
-        top: 50%;
-        padding: 8px 40px;
-        font-size: 16px;
-    }
-
     .titre_project {
         font-size: 28px;
         margin-left: 1rem;
         margin-top: 60px;
+        margin-bottom: 0;
     }
 
     .description_project {
@@ -244,29 +226,11 @@
 
 /* Responsive à 450px */
 @media (max-width: 450px) {
-    .titre_banniere {
-        font-size: 32px;
-        letter-spacing: 10px;
-        top: 20px;
-        line-height: 1.1;
-    }
-
-    .content_banniere {
-        font-size: 16px;
-        top: 150px;
-        padding: 0 8px;
-    }
-
-    .bouton_banniere {
-        top: 45%;
-        padding: 6px 30px;
-        font-size: 14px;
-    }
-
     .titre_project {
         font-size: 24px;
         margin-left: 0.5rem;
         margin-top: 40px;
+        margin-bottom: 0;
     }
 
     .description_project {
@@ -297,3 +261,90 @@
         max-width: 95%;
     }
 }
+
+@media (max-width: 1312px) {
+    .bouton_banniere {
+        top: 66%;
+    }
+}
+
+@media (max-width: 1266px) {
+    .bouton_banniere {
+        top: 75%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .bouton_banniere {
+        top: 72%;
+    }
+}
+
+@media (max-width: 1215px) {
+    .bouton_banniere {
+        top: 77%;
+    }
+}
+
+@media (max-width: 1138px) {
+    .titre_banniere{
+        font-size: 68px;
+    }
+
+    .image_banniere {
+        max-height: 481px;
+    }
+
+    .content_banniere {
+        top: 317px;
+    }
+
+    .bouton_banniere {
+        top: 81%;
+    }
+}
+
+@media (max-width: 824px) {
+    .titre_banniere{
+        font-size: 30px;
+        top: 1px;
+    }
+
+    .image_banniere {
+        max-height: 246px;
+    }
+
+    .content_banniere {
+        font-size: 20px;
+        top: 134px;
+    }
+
+    .bouton_banniere {
+        top: 74%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .titre_banniere{
+        font-size: 22px;
+        letter-spacing: 30px;
+    }
+
+    .image_banniere {
+        max-height: 186px;
+    }
+
+    .content_banniere {
+        font-size: 16px;
+        top: 100px;
+    }
+
+    .bouton_banniere {
+        top: 75%;
+        font-size: 17px;
+        padding: 5px 11px;
+    }
+}
+
+
