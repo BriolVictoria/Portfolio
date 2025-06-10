@@ -53,7 +53,7 @@ class ContactForm
         ]);
         // Envoyer un mail de notification.
         wp_mail(
-            to: 'victoriabriol5@gmail.com',
+            to: 'victoria.briol@student.hepl.be',
             subject: 'Nouveau message de contact',
             message: $this->generateEmailContent($data),
         );
