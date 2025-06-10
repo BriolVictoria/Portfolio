@@ -12,13 +12,13 @@ $titre_formulaire = get_field('titre_formulaire');
 $nom_champs = get_field('nom_champs');
 $prenom_champs = get_field('prenom_champs');
 $sujet_champs = get_field('sujet_champs');
-$numero_champs = get_field('numero_champs');
+$email_champs = get_field('email_champs');
 $message_champs = get_field('message_champs');
 $bouton_formulaire = get_field('bouton_formulaire');
 
 $titre_champs = get_field('titre_autres');
 $email_titre_champs = get_field('email_titre_autres');
-$email_champs = get_field('email_autres');
+$email_autres = get_field('email_autres');
 $telephone_titre_champs = get_field('telephone_titre_autres');
 $telephone_champs = get_field('telephone_autres');
 
@@ -38,40 +38,116 @@ $telephone_champs = get_field('telephone_autres');
         <section class="infos">
             <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
             <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
-            <a class="content_info_contact" title="Vers mon email" href="mailto:<?= $email_champs ?>"><?= $email_champs ?></a>
+            <a class="content_info_contact" title="Vers mon email" href="mailto:<?= $email_autres ?>"><?= $email_autres ?></a>
             <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
             <a href="tel:<?= $telephone_champs ?>" title="Vers mon numéro de téléphone" class="content_info_contact"><?= $telephone_champs ?></a>
         </section>
 
-        <section class="formulaire">
-            <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
+       <!-- <section class="formulaire">
+            <h3 class="titre_contact"><strong class="soulignement_contact"><?php /*= $titre_formulaire */?></strong></h3>
             <form action="#" method="get">
 
                 <div>
-                    <label class="nom_champs" for="nom"><?= $nom_champs ?></label>
+                    <label class="nom_champs" for="nom"><?php /*= $nom_champs */?></label>
                     <input class="input_champs" type="text" id="nom" name="nom" placeholder="Joe">
                 </div>
 
                 <div>
-                    <label class="nom_champs" for="prenom"><?= $prenom_champs ?></label>
+                    <label class="nom_champs" for="prenom"><?php /*= $prenom_champs */?></label>
                     <input class="input_champs" type="text" id="prenom" name="nom" placeholder="Gold">
                 </div>
 
                 <div>
-                    <label class="nom_champs" for="numero"><?= $numero_champs ?></label>
+                    <label class="nom_champs" for="numero"><?php /*= $numero_champs */?></label>
                     <input class="input_champs" type="text" id="numero" name="nom" placeholder="0470/ 34.65.78">
                 </div>
 
                 <div>
-                    <label class="nom_champs" for="message"><?= $message_champs ?></label>
+                    <label class="nom_champs" for="message"><?php /*= $message_champs */?></label>
                     <textarea class="input_champs" name="note" id="note" cols="30" rows="5" placeholder="Votre message... "></textarea>
                 </div>
 
             </form>
-            <a class="bouton_contact" href="<?= $bouton_formulaire['url'] ?>"><?= $bouton_formulaire['title'] ?></a>
-        </section>
+            <a class="bouton_contact" href="<?php /*= $bouton_formulaire['url'] */?>"><?php /*= $bouton_formulaire['title'] */?></a>
+        </section>-->
+
+
+<?php
+// On ouvre "la boucle" (The loop), la structure de contrôle de contenu propre à WordPress:
+if(have_posts()): while (have_posts()): the_post(); ?>
+    <section class="contact">
+        <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
+        <div class="contact__left"><?= get_the_content(); ?></div>
+        <div class="contact__right">
+            <?php
+            $errors = $_SESSION['contact_form_errors'] ?? [];
+            unset($_SESSION['contact_form_errors']);
+            $success = $_SESSION['contact_form_success'] ?? false;
+            unset($_SESSION['contact_form_success']);
+
+            if($success): ?>
+                <div class="contact__success">
+                    <p><?= $success; ?></p>
+                </div>
+            <?php else: ?>
+                <form action="<?= admin_url('admin-post.php'); ?>" method="POST" class="form">
+                    <fieldset class="form__fields">
+                        <div class="field">
+                            <label for="firstname" class="nom_champs"><?= $prenom_champs ?></label>
+                            <input type="text" name="firstname" id="firstname" class="input_champs" placeholder="Joe">
+                            <?php if(isset($errors['firstname'])): ?>
+                                <p class="field__error"><?= $errors['firstname']; ?></p>
+                            <?php endif; ?>
+                        </div>
+                        <div class="field">
+                            <label for="lastname" class="nom_champs"><?= $nom_champs ?></label>
+                            <input type="text" name="lastname" id="lastname" class="input_champs" placeholder="Gold">
+                            <?php if(isset($errors['lastname'])): ?>
+                                <p class="field__error"><?= $errors['lastname']; ?></p>
+                            <?php endif; ?>
+
+                        </div>
+                        <div class="field">
+                            <label class="nom_champs" for="email"><?= $email_champs ?></label>
+                            <input type="email" name="email" id="email" class="input_champs" placeholder="joe.gold@gmail.com">
+                            <?php if(isset($errors['email'])): ?>
+                                <p class="field__error"><?= $errors['email']; ?></p>
+                            <?php endif; ?>
+                        </div>
+                        <div class="field">
+                            <label for="message" class="nom_champs"><?= $message_champs ?></label>
+                            <textarea name="message" id="message" class="input_champs" cols="30" rows="5" placeholder="Votre message... "></textarea>
+                            <?php if(isset($errors['message'])): ?>
+                                <p class="field__error"><?= $errors['message']; ?></p>
+                            <?php endif; ?>
+
+                        </div>
+                    </fieldset>
+                    <div class="form__submit">
+                        <?php
+                        // ce champ "hidden" permet à WP d'identifier la requête et de la transmettre
+                        // à notre fonction définie dans functions.php via "add_action('admin_post_[nom-action]')"
+                        ?>
+                        <input type="hidden" name="action" value="dw_submit_contact_form">
+                        <a href="<?= esc_url($bouton_formulaire['url']) ?>"
+                           target="<?= esc_attr($bouton_formulaire['target'] ?: '_self') ?>"
+                           class="bouton_contact">
+                            <?= esc_html($bouton_formulaire['title']) ?>
+                        </a>
+
+                    </div>
+                </form>
+            <?php endif; ?>
+        </div>
+    </section>
+
+
 
     </div>
 
 
-<?php get_footer(); ?>
+<?php
+endwhile;
+endif;
+get_footer();
+?>

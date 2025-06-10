@@ -243,6 +243,9 @@ textarea {
     resize: vertical;
 }
 
+fieldset {
+    border: none;
+}
 
 /* === TABLETTE (768px à 1024px) === */
 @media screen and (max-width: 1024px) {
