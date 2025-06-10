@@ -43,39 +43,13 @@ $telephone_champs = get_field('telephone_autres');
             <a href="tel:<?= $telephone_champs ?>" title="Vers mon numéro de téléphone" class="content_info_contact"><?= $telephone_champs ?></a>
         </section>
 
-       <!-- <section class="formulaire">
-            <h3 class="titre_contact"><strong class="soulignement_contact"><?php /*= $titre_formulaire */?></strong></h3>
-            <form action="#" method="get">
 
-                <div>
-                    <label class="nom_champs" for="nom"><?php /*= $nom_champs */?></label>
-                    <input class="input_champs" type="text" id="nom" name="nom" placeholder="Joe">
-                </div>
-
-                <div>
-                    <label class="nom_champs" for="prenom"><?php /*= $prenom_champs */?></label>
-                    <input class="input_champs" type="text" id="prenom" name="nom" placeholder="Gold">
-                </div>
-
-                <div>
-                    <label class="nom_champs" for="numero"><?php /*= $numero_champs */?></label>
-                    <input class="input_champs" type="text" id="numero" name="nom" placeholder="0470/ 34.65.78">
-                </div>
-
-                <div>
-                    <label class="nom_champs" for="message"><?php /*= $message_champs */?></label>
-                    <textarea class="input_champs" name="note" id="note" cols="30" rows="5" placeholder="Votre message... "></textarea>
-                </div>
-
-            </form>
-            <a class="bouton_contact" href="<?php /*= $bouton_formulaire['url'] */?>"><?php /*= $bouton_formulaire['title'] */?></a>
-        </section>-->
 
 
 <?php
 // On ouvre "la boucle" (The loop), la structure de contrôle de contenu propre à WordPress:
 if(have_posts()): while (have_posts()): the_post(); ?>
-    <section class="contact">
+    <section class="formulaire">
         <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_formulaire ?></strong></h3>
         <div class="contact__left"><?= get_the_content(); ?></div>
         <div class="contact__right">
