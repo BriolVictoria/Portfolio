@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-06-11 15:57+0200\n"
-"PO-Revision-Date: 2025-06-11 16:16+0200\n"
+"POT-Creation-Date: 2025-06-11 17:25+0200\n"
+"PO-Revision-Date: 2025-06-11 17:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_GB\n"
@@ -80,11 +80,11 @@ msgstr "Legal informations"
 msgid "Vers la page Me découvrir"
 msgstr "To the page Discover me"
 
-#: front-page.php:41 page-template/project-template.php:61 single-projet.php:75
+#: front-page.php:41 page-template/project-template.php:63 single-projet.php:75
 msgid "Vers le projet"
 msgstr "To the project"
 
-#: front-page.php:52 page-template/project-template.php:76
+#: front-page.php:52 page-template/project-template.php:78
 msgid "Je n‘ai pas de projet récents à montrer pour le moment..."
 msgstr "I don’t have any recent projects to show at the moment…"
 
@@ -118,27 +118,27 @@ msgstr "To my phone number"
 msgid "Votre message..."
 msgstr "Your message…"
 
-#: page-template/project-template.php:47
+#: page-template/project-template.php:49
 msgid "Voir tous les projets"
 msgstr "See all of my projects"
 
-#: page-template/project-template.php:47
+#: page-template/project-template.php:49
 msgid "Tous"
 msgstr "All"
 
-#: page-template/project-template.php:48
+#: page-template/project-template.php:50
 msgid "Voir les projets mobile"
 msgstr "See my mobile projects"
 
-#: page-template/project-template.php:48
+#: page-template/project-template.php:50
 msgid "Mobile"
 msgstr "Mobile"
 
-#: page-template/project-template.php:49
+#: page-template/project-template.php:51
 msgid "Voir les projets web"
 msgstr "See my web projects"
 
-#: page-template/project-template.php:49
+#: page-template/project-template.php:51
 msgid "Web"
 msgstr "Web"
 
