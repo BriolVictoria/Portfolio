@@ -60,7 +60,7 @@ $projets = new WP_Query([
     </div>
 
     <div class="lien_projet_container">
-        <a target="_blank" class="lien_vers_projet" href="<?= $lien_vers_projet['url'] ?>"><?= $lien_vers_projet['title'] ?></a>
+        <a title="<?=__hepl('Lien vers le projet')?>" target="_blank" class="lien_vers_projet" href="<?= $lien_vers_projet['url'] ?>"><?= $lien_vers_projet['title'] ?></a>
     </div>
 
 
@@ -72,7 +72,7 @@ $projets = new WP_Query([
 
                     <div class="projet_card">
                         <figure class="trip_fig">
-                            <a title="Vers le projet" href="<?= get_permalink(); ?>">
+                            <a title="<?=__hepl('Vers le projet')?>" href="<?= get_permalink(); ?>">
                                 <?= get_the_post_thumbnail(null, 'medium', ['class' => 'trip_img']); ?>
                             </a>
                         </figure>
@@ -90,7 +90,7 @@ $projets = new WP_Query([
         </div>
 
         <div class="bouton_container_projet">
-            <a class="bouton_projet" href="<?= $bouton_project['url'] ?>"><?= $bouton_project['title'] ?></a>
+            <a title="<?=__hepl('Vers les projets')?>" class="bouton_projet" href="<?= $bouton_project['url'] ?>"><?= $bouton_project['title'] ?></a>
         </div>
 
     </section>

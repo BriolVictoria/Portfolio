@@ -20,7 +20,7 @@
         <div class="gauche">
             <img class="logo" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Victoria Briol">
             <h1>
-                <a title="Vers la page d'accueil" class="titre" href="<?php echo esc_url(home_url('/')); ?>">
+                <a title="<?=__hepl('Vers la page d‘accueil')?>" class="titre" href="<?php echo esc_url(home_url('/')); ?>">
                     <strong class="soulignement">Victoria Briol</strong>
                 </a>
             </h1>
@@ -29,13 +29,10 @@
         <ul class="droite" id="nav_menu">
             <?php foreach (dw_get_navigation_links('header-menu') as $link): ?>
                 <li class="lien">
-                    <a title="Vers la page <?= $link->label; ?>" href="<?= $link->href ?>"
+                    <a title="<?=__hepl('Vers la page')?> <?= $link->label; ?>" href="<?= $link->href ?>"
                        class="lien"><?= $link->label; ?></a>
                 </li>
             <?php endforeach; ?>
-            <li>
-                <a title="Mettre la page en anglais" href="#" class="en_langue">EN</a>
-            </li>
         </ul>
 
         <section>

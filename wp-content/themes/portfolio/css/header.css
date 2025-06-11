@@ -121,13 +121,8 @@ a.titre {
     transform: scaleX(1); /* Fait apparaître la ligne verte */
 }
 
-.en_langue {
-    cursor: pointer;
+ul.droite li.lien:last-child a {
     margin-right: 20px;
-}
-
-.en_langue:hover {
-    font-weight: 600;
 }
 
 

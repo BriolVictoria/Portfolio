@@ -38,9 +38,9 @@ $telephone_champs = get_field('telephone_autres');
         <section class="infos">
             <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
             <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
-            <a class="content_info_contact" title="Vers mon email" href="mailto:<?= $email_autres ?>"><?= $email_autres ?></a>
+            <a class="content_info_contact" title="<?=__hepl('Vers mon email')?>" href="mailto:<?= $email_autres ?>"><?= $email_autres ?></a>
             <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
-            <a href="tel:<?= $telephone_champs ?>" title="Vers mon numéro de téléphone" class="content_info_contact"><?= $telephone_champs ?></a>
+            <a href="tel:<?= $telephone_champs ?>" title="<?=__hepl('Vers mon numéro de téléphone')?>" class="content_info_contact"><?= $telephone_champs ?></a>
         </section>
 
 
@@ -90,7 +90,7 @@ if(have_posts()): while (have_posts()): the_post(); ?>
                         </div>
                         <div class="field">
                             <label for="message" class="nom_champs"><?= $message_champs ?></label>
-                            <textarea name="message" id="message" class="input_champs" cols="30" rows="5" placeholder="Votre message... "></textarea>
+                            <textarea name="message" id="message" class="input_champs" cols="30" rows="5" placeholder="<?=__hepl('Votre message...')?> "></textarea>
                             <?php if(isset($errors['message'])): ?>
                                 <p class="field__error"><?= $errors['message']; ?></p>
                             <?php endif; ?>

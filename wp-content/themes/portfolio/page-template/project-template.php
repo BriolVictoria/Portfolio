@@ -44,9 +44,9 @@ $projets = new WP_Query($args);
     <p class="content_projects"><?= esc_html($description_projets ?? 'Voici une sélection de mes projets.') ?></p>
 
     <div class="container">
-        <a class="boutons_projects <?= ($taxonomy === '') ? 'active' : '' ?>" href="?filter=">Tous</a>
-        <a class="boutons_projects <?= ($taxonomy === 'mobile') ? 'active' : '' ?>" href="?filter=mobile">Mobile</a>
-        <a class="boutons_projects <?= ($taxonomy === 'web') ? 'active' : '' ?>" href="?filter=web">Web</a>
+        <a title="<?=__hepl('Voir tous les projets')?>" class="boutons_projects <?= ($taxonomy === '') ? 'active' : '' ?>" href="?filter="><?=__hepl('Tous')?></a>
+        <a title="<?=__hepl('Voir les projets mobile')?>" class="boutons_projects <?= ($taxonomy === 'mobile') ? 'active' : '' ?>" href="?filter=mobile"><?=__hepl('Mobile')?></a>
+        <a title="<?=__hepl('Voir les projets web')?>" class="boutons_projects <?= ($taxonomy === 'web') ? 'active' : '' ?>" href="?filter=web"><?=__hepl('Web')?></a>
     </div>
 
 </section>
@@ -58,7 +58,7 @@ $projets = new WP_Query($args);
         <?php if ($projets->have_posts()): while ($projets->have_posts()): $projets->the_post(); ?>
 
             <article class="projets_page">
-                <a title="Vers le projet" href="<?= get_the_permalink() ?>">
+                <a title="<?=__hepl('Vers le projet')?>" href="<?= get_the_permalink() ?>">
                     <div class="projet_content">
                         <figure class="projet_fig">
                             <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'projet_img']); ?>
@@ -73,7 +73,7 @@ $projets = new WP_Query($args);
 
         <?php endwhile; else: ?>
     </div>
-    <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
+    <p><?=__hepl('Je n‘ai pas de projet récents à montrer pour le moment...')?></p>
     <?php endif; ?>
 
 </section>

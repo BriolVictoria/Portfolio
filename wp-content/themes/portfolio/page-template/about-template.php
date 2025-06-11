@@ -62,7 +62,7 @@ $competences = new WP_Query([
                     </div>
                 </article>
             <?php endwhile; else: ?>
-                <p>Je n'ai pas de parcours à montrer pour le moment...</p>
+                <p><?=__hepl('Je n‘ai pas de parcours à montrer pour le moment...')?></p>
             <?php endif; ?>
         </div>
 
@@ -92,7 +92,7 @@ $competences = new WP_Query([
 
 
             <?php endwhile; else: ?>
-                <p>Je n'ai pas de compétences à montrer pour le moment...</p>
+                <p><?=__hepl('Je n‘ai pas de compétences à montrer pour le moment...')?></p>
             <?php endif; ?>
         </div>
     </section>
@@ -101,7 +101,7 @@ $competences = new WP_Query([
     <section>
         <p class="bouton_content_about"><?= $description_bouton ?></p>
         <div class="container">
-            <a class="bouton_about" title="Vers la page Contact" href="<?= $bouton['url'] ?>"><?= $bouton['title'] ?></a>
+            <a class="bouton_about" title="<?=__hepl('Vers la page Contact')?>" href="<?= $bouton['url'] ?>"><?= $bouton['title'] ?></a>
         </div>
     </section>
 
