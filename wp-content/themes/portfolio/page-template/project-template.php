@@ -46,9 +46,9 @@ $projets = new WP_Query($args);
     <p class="content_projects"><?= esc_html($description_projets ?? 'Voici une sélection de mes projets.') ?></p>
 
     <div class="container">
-        <a title="<?=__hepl('Voir tous les projets')?>" class="boutons_projects <?= ($taxonomy === '') ? 'active' : '' ?>" href="?filter="><?=__hepl('Tous')?></a>
-        <a title="<?=__hepl('Voir les projets mobile')?>" class="boutons_projects <?= ($taxonomy === 'mobile') ? 'active' : '' ?>" href="?filter=mobile"><?=__hepl('Mobile')?></a>
-        <a title="<?=__hepl('Voir les projets web')?>" class="boutons_projects <?= ($taxonomy === 'web') ? 'active' : '' ?>" href="?filter=web"><?=__hepl('Web')?></a>
+       <a title="<?=__hepl('Voir tous les projets')?>" class="boutons_projects <?= ($taxonomy === '') ? 'active' : '' ?>" href="?filter="><?=__hepl('Tous')?></a>
+        <a title="<?=__hepl('Voir les projets mobile')?>" class="boutons_projects <?= ($taxonomy === 'mobile-fr'|| 'mobile-en') ? 'active' : '' ?>" href="?filter=mobile-fr"><?=__hepl('Mobile')?></a>
+        <a title="<?=__hepl('Voir les projets web')?>" class="boutons_projects <?= ($taxonomy === 'web-fr' || 'mobile-en') ? 'active' : '' ?>" href="?filter=web-fr"><?=__hepl('Web')?></a>
     </div>
 
 </section>

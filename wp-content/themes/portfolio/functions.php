@@ -29,23 +29,22 @@ function __hepl(string $translation, array $replacements = [])
 // nous allons créer. On va le désactiver :
 
 // Disable Gutenberg on the back end.
-add_filter( 'use_block_editor_for_post', '__return_false' ); // une chaîne de caractère qui existe dans wordPress
+add_filter('use_block_editor_for_post', '__return_false'); // une chaîne de caractère qui existe dans wordPress
 
 // Disable Gutenberg for widgets.
-add_filter( 'use_widgets_block_editor', '__return_false' );
+add_filter('use_widgets_block_editor', '__return_false');
 // Disable default front-end styles.
 
-add_action( 'wp_enqueue_scripts', function() {
+add_action('wp_enqueue_scripts', function () {
     // Remove CSS on the front end.
-    wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style('wp-block-library');
     // Remove Gutenberg theme.
-    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style('wp-block-library-theme');
     // Remove inline global CSS on the front end.
-    wp_dequeue_style( 'global-styles' );
-}, 20 );
+    wp_dequeue_style('global-styles');
+}, 20);
 
 //Fin "installation" Gutenberg
-
 
 
 //Début post-type
@@ -110,12 +109,14 @@ register_post_type('projet', [
 //Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
 // avec un identifint spécifique dans la colonne "post_type"
 
-function register_my_menus() {
+function register_my_menus()
+{
     register_nav_menus([
         'header-menu' => 'Menu principal',
         'footer-menu' => 'Menu pied de page',
     ]);
 }
+
 add_action('init', 'register_my_menus');
 
 function dw_get_navigation_links(string $location): array
@@ -154,7 +155,8 @@ function dw_get_navigation_links(string $location): array
 }
 
 // Enregistrer la taxonomie personnalisée "projet_type"
-function register_projet_taxonomy() {
+function register_projet_taxonomy()
+{
     register_taxonomy('projet_type', ['projet'], [
         'labels' => [
             'name' => __('Types de projets'),
@@ -169,10 +171,12 @@ function register_projet_taxonomy() {
         'rewrite' => ['slug' => 'type-de-projet'],
     ]);
 }
+
 add_action('init', 'register_projet_taxonomy');
 
 // Créer des termes par défaut (à exécuter une seule fois)
-function create_projet_terms() {
+function create_projet_terms()
+{
     if (!term_exists('Mobile', 'projet_type')) {
         wp_insert_term('Mobile', 'projet_type', ['slug' => 'mobile']);
     }
@@ -180,6 +184,8 @@ function create_projet_terms() {
         wp_insert_term('Web', 'projet_type', ['slug' => 'web']);
     }
 }
+
+
 add_action('init', 'create_projet_terms');
 
 register_post_type('contact_message', [
