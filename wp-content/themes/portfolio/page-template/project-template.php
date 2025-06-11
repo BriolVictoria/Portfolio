@@ -35,6 +35,8 @@ if ($taxonomy !== '') {
 }
 
 $projets = new WP_Query($args);
+
+
 ?>
 
 <section class="projet_template">
