@@ -18,10 +18,11 @@ $projets = new WP_Query([
         <h2 class="sr-only"><?= get_the_title(); ?></h2>
         <div class="projet_box header_projet">
             <div class="image_projet_container">
-                <?= get_the_post_thumbnail(null, 'medium', ['class' => 'image_projet']) ?>
+                <div class="back_image_projet_first"></div>
+                <?= get_the_post_thumbnail(null, 'medium', ['class' => 'image_projet_first']) ?>
             </div>
             <div class="projet_texte">
-                <p class="projet_content_texte"><?= get_the_content() ?></p>
+                <p class="projet_content_texte_first"><?= get_the_content() ?></p>
             </div>
         </div>
     </section>
