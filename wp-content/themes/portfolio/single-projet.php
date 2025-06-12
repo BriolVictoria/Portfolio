@@ -22,7 +22,7 @@ $projets = new WP_Query([
                 <?= get_the_post_thumbnail(null, 'medium', ['class' => 'image_projet_first']) ?>
             </div>
             <div class="projet_texte">
-                <p class="projet_content_texte_first"><?= get_the_content() ?></p>
+                <?= get_the_content(['class' => 'projet_content_texte_first']);?>
             </div>
         </div>
     </section>

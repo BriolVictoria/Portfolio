@@ -26,6 +26,15 @@
             </h1>
         </div>
 
+        <input type="checkbox" tabindex="0" id="bgm_navigation" class="navigation_burger_menu">
+        <label for="bgm_navigation" class="nav_bgm_label">
+                <svg class="nav_bgm_svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="nav_element" d="M6.25 9.30469H23.75" stroke-width="2"/>
+                    <path class="nav_element" d="M6.25 15.554H23.75" stroke-width="2"/>
+                    <path class="nav_element" d="M6.25 21.8347H23.75" stroke-width="2"/>
+                </svg>
+        </label>
+
         <ul class="droite" id="nav_menu">
             <?php foreach (dw_get_navigation_links('header-menu') as $link): ?>
                 <li class="lien">
@@ -34,16 +43,6 @@
                 </li>
             <?php endforeach; ?>
         </ul>
-
-        <section>
-            <button class="nav_bgm" aria-expanded="false" aria-label="Menu principal" aria-controls="nav_menu">
-                <svg class="nav_bgm_svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="nav_element" d="M6.25 9.30469H23.75" stroke-width="2"/>
-                    <path class="nav_element" d="M6.25 15.554H23.75" stroke-width="2"/>
-                    <path class="nav_element" d="M6.25 21.8347H23.75" stroke-width="2"/>
-                </svg>
-            </button>
-        </section>
 
 
     </div>
