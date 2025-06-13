@@ -98,17 +98,10 @@ if(have_posts()): while (have_posts()): the_post(); ?>
                         </div>
                     </fieldset>
                     <div class="form__submit">
-                        <?php
-                        // ce champ "hidden" permet à WP d'identifier la requête et de la transmettre
-                        // à notre fonction définie dans functions.php via "add_action('admin_post_[nom-action]')"
-                        ?>
                         <input type="hidden" name="action" value="dw_submit_contact_form">
-                        <a href="<?= esc_url($bouton_formulaire['url']) ?>"
-                           target="<?= esc_attr($bouton_formulaire['target'] ?: '_self') ?>"
-                           class="bouton_contact">
+                        <button type="submit" class="bouton_contact">
                             <?= esc_html($bouton_formulaire['title']) ?>
-                        </a>
-
+                        </button>
                     </div>
                 </form>
             <?php endif; ?>
