@@ -1,4 +1,3 @@
-/*
 const elements = document.querySelectorAll('.projet, .titre_project, .description_project, .bouton_container_projet');
 
 function checkVisibility() {
@@ -14,7 +13,6 @@ function checkVisibility() {
 
 window.addEventListener('scroll', checkVisibility);
 checkVisibility(); // pour les éléments déjà visibles au chargement
-*/
 
 const burgerBtn = document.querySelector('.nav_bgm');
 const menu = document.querySelector('.droite');
