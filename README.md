@@ -20,9 +20,9 @@ Le site est développé en **HTML**, **CSS** et **JavaScript**, et dévelloppé 
 
 ## Technologies utilisées
 
-- HTML5 ![Logo HTML5](images/html5-logo.png)
-- CSS3  ![Logo CSS3](images/css3-logo.png)
-- JavaScript ![Logo JS](images/js-logo.png)
+- HTML5 
+- CSS3  
+- JavaScript 
 - WordPress 
 
 ---
