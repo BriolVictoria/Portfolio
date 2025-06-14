@@ -133,17 +133,27 @@ article:nth-of-type(odd).projet_texte {
     width: 100%;
 }
 
+.lien_projet_container {
+    text-align: center;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
 .lien_vers_projet {
     font-weight: 500;
     background-color: var(--dark-green-color);
     padding: 9.5px 52.5px;
     color: var(--white-color);
-    margin-top: 26px;
     text-decoration: none;
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 0 transparent;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin: 26px auto;
 }
 
 .lien_vers_projet:hover {
@@ -151,9 +161,16 @@ article:nth-of-type(odd).projet_texte {
     box-shadow: 0 0 12px var(--dark-green-color);
 }
 
-.lien_projet_container {
-    text-align: center;
-    margin-top: 90px;
+.lien_vers_github {
+    margin-top: 10px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.lien_vers_github:hover {
+    transform: scale(1.05);
+    color: var(--green-color);
 }
 
 /* RESPONSIVE */

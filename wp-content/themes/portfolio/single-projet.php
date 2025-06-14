@@ -3,6 +3,7 @@ get_header();
 
 $bouton_project = get_field('bouton_projets');
 $lien_vers_projet = get_field('lien_vers_projet');
+$lien_vers_github = get_field('lien_vers_github');
 
 
 $projets = new WP_Query([
@@ -61,6 +62,7 @@ $projets = new WP_Query([
 
     <div class="lien_projet_container">
         <a title="<?=__hepl('Lien vers le projet')?>" target="_blank" class="lien_vers_projet" href="<?= $lien_vers_projet['url'] ?>"><?= $lien_vers_projet['title'] ?></a>
+        <a title="<?=__hepl('Github')?>" target="_blank" class="lien_vers_github" href="<?= $lien_vers_github['url'] ?>"><?= $lien_vers_github['title'] ?></a>
     </div>
 
 

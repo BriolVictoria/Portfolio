@@ -169,7 +169,7 @@ ul.droite li.lien:first-child a {
 /* Menu visible par défaut sur desktop */
 @media (min-width: 886px) {
     .droite {
-        display: flex !important;
+        display: flex;
         position: static;
         opacity: 1;
         transform: none;
