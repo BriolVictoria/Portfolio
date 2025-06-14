@@ -1,1 +1,32 @@
-Porfolio
+# Portfolio Personnel
+
+## Description
+
+Ce projet est un portfolio en ligne destiné à présenter mes compétences, mes réalisations et mon parcours professionnel. L’objectif est de captiver l’attention des futurs employeurs et de mettre en valeur mon travail de manière claire et professionnelle.
+
+Le site est développé en **HTML**, **CSS** et **JavaScript**, et dévelloppé sur **WordPress** pour une gestion plus flexible et évolutive.
+
+---
+
+## Fonctionnalités
+
+- Présentation claire de mes compétences et expériences
+- Galerie de projets réalisés avec descriptions détaillées
+- Interface responsive, adaptée à tous les types d’écrans (desktop, tablette, mobile)
+- Intégration WordPress pour une administration simplifiée
+- Liens vers mes réseaux sociaux et contact facile
+
+---
+
+## Technologies utilisées
+
+- HTML5 ![Logo HTML5](images/html5-logo.png)
+- CSS3  ![Logo CSS3](images/css3-logo.png)
+- JavaScript ![Logo JS](images/js-logo.png)
+- WordPress 
+
+---
+
+## Retrouvés mon portfolio
+-  Victoria-briol.be
+
