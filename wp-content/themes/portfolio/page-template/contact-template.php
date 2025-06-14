@@ -38,9 +38,9 @@ $telephone_champs = get_field('telephone_autres');
         <section class="infos">
             <h3 class="titre_contact"><strong class="soulignement_contact"><?= $titre_champs ?></strong></h3>
             <h4 class="titre_email_contact"><?= $email_titre_champs ?></h4>
-            <a class="content_info_contact" title="<?=__hepl('Vers mon email')?>" href="mailto:<?= $email_autres ?>"><?= $email_autres ?></a>
+            <a class="content_info_contact" title="<?=__hepl('Vers mon email')?>" aria-label="Envoyer un email à <?= $email_autres ?>" href="mailto:<?= $email_autres ?>"><?= $email_autres ?></a>
             <h4 class="titre_telephone_contact"><?= $telephone_titre_champs ?></h4>
-            <a href="tel:<?= $telephone_champs ?>" title="<?=__hepl('Vers mon numéro de téléphone')?>" class="content_info_contact"><?= $telephone_champs ?></a>
+            <a href="tel:<?= $telephone_champs ?>" title="<?=__hepl('Vers mon numéro de téléphone')?>" aria-label="Appeler le numéro <?= $telephone_champs ?>" class="content_info_contact"><?= $telephone_champs ?></a>
         </section>
 
 
@@ -99,7 +99,7 @@ if(have_posts()): while (have_posts()): the_post(); ?>
                     </fieldset>
                     <div class="form__submit">
                         <input type="hidden" name="action" value="dw_submit_contact_form">
-                        <button type="submit" class="bouton_contact">
+                        <button type="submit" class="bouton_contact" aria-label="Envoyer le formulaire de contact">
                             <?= esc_html($bouton_formulaire['title']) ?>
                         </button>
                     </div>
