@@ -1,11 +1,10 @@
-
-/* === STYLES PAR DÉFAUT (DESKTOP) === */
+/*Style de la page contact*/
 .contact_columns {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 5.625em auto;
-    gap: 6.25px;
+    gap: 0.390625em;
     max-width: 75em;
     padding: 0 2.5em;
 }
@@ -15,12 +14,21 @@
     max-width: 37.5em;
 }
 
+section {
+    position: relative;
+}
+
+/*Image de la page contact*/
+
+
 .image_banniere_contact {
     width: 100%;
     max-height: 23.375em; /*Demander si on peux*/
     display: block;
     position: relative;
 }
+
+/*Titre de la page contact*/
 
 .titre_banniere_contact {
     position: absolute;
@@ -36,6 +44,8 @@
     width: 90%;
 }
 
+/*Description de la page contact*/
+
 .content_banniere_contact {
     position: absolute;
     top: 44%;
@@ -49,14 +59,15 @@
     z-index: 1;
 }
 
-section {
-    position: relative;
-}
+/*Titre des éléments de la page contact*/
 
 .titre_contact {
     font-size: 2.25em;
     font-weight: 400;
 }
+
+/*Input de la page contact*/
+
 
 .input_champs {
     background-color: var(--light-green-color);
@@ -67,12 +78,17 @@ section {
     margin-bottom: 0.625em;
 }
 
+/*Label de la page contact*/
+
 .nom_champs {
     font-size: 1.25em;
     font-weight: 300;
     margin-bottom: 0.625em;
     margin-left: 0.4em;
 }
+
+/*Bouton de la page contact*/
+
 
 .bouton_contact {
     display: inline-block;
@@ -89,37 +105,19 @@ section {
     font-size: 15px;
 }
 
+/*Effet bouton de la page contact*/
+
 .bouton_contact:hover {
     transform: scale(1.05); /* Agrandissement visuel */
     box-shadow: 0 0 0.75em var(--dark-green-color); /* Halo lumineux */
 }
 
+/*Element des autres éléments de contact */
+
 .content_info_contact {
     font-size: 1.25em;
     font-weight: 300;
     margin-bottom: 1.25em;
-}
-
-.titre_email_contact,
-.titre_telephone_contact {
-    font-size: 1.375em;
-    font-weight: 400;
-    margin-bottom: 0.313em;
-}
-
-.soulignement_contact {
-    background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
-    display: inline;
-    font-weight: 400;
-}
-
-[placeholder] {
-    font-size: 1em;
-    color: var(--green-color);
-    font-weight: 200;
-}
-
-.content_info_contact {
     position: relative;
     color: var(--green-color);
     text-decoration: none;
@@ -148,6 +146,30 @@ section {
     color: var(--green-color);
 }
 
+/* titre des Element des autres éléments de contact*/
+
+
+.titre_email_contact,
+.titre_telephone_contact {
+    font-size: 1.375em;
+    font-weight: 400;
+    margin-bottom: 0.313em;
+}
+
+.soulignement_contact {
+    background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}
+
+/* Element du formulaire de contact*/
+
+[placeholder] {
+    font-size: 1em;
+    color: var(--green-color);
+    font-weight: 200;
+}
+
 textarea {
     resize: vertical;
 }
@@ -156,7 +178,7 @@ fieldset {
     border: none;
 }
 
-/* === TABLETTE (768px à 1024px) === */
+/* Media queries de toute la page*/
 @media screen and (max-width: 1024px) {
     .content_banniere_contact {
         font-size: 0.875em;
@@ -180,7 +202,6 @@ fieldset {
     }
 }
 
-/* === MOBILE (jusqu’à 767px) === */
 @media screen and (max-width: 804px) {
     .titre_banniere_contact {
         font-size: 1.5em;

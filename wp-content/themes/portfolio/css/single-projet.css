@@ -1,4 +1,5 @@
-/* TITRE PRINCIPAL DE LA PAGE */
+/*Style de la page de projet*/
+
 .titre_par_projet {
     font-size: 2.25rem; /* équivalent à 36px */
     font-weight: 400;
@@ -6,27 +7,23 @@
     margin-top: 90px;
 }
 
-/* SOULIGNEMENT DANS LES TITRES */
 .soulignement_projet {
     background-image: linear-gradient(to top, var(--light-green-color) 40%, transparent 40%);
     display: inline;
     font-weight: 400;
 }
 
-/* TITRE DE CHAQUE SECTION DE PROJET */
 .titre_section_projet {
     font-size: 1.75rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-/* CONTENU TEXTE D'UN PROJET */
 .projet_content {
     font-size: 1rem;
     font-weight: 400;
 }
 
-/* STRUCTURE GÉNÉRALE */
 .projet_box {
     display: flex;
     flex-direction: row;
@@ -41,7 +38,6 @@ article:nth-of-type(odd) .projet_box {
     flex-direction: row-reverse;
 }
 
-/* IMAGE ET SON FOND */
 .image_wrapper {
     position: relative;
     max-width: 100%;
@@ -106,7 +102,6 @@ article:nth-of-type(odd) .back_image_projet {
     z-index: 1;
 }
 
-/* TEXTE PROJET */
 .projet_texte {
     flex: 1 1 300px;
     padding: 0 247px;
@@ -126,7 +121,6 @@ article:nth-of-type(odd).projet_texte {
     max-width: 700px;
 }
 
-/* BOUTON */
 .bouton_container_projet {
     display: flex;
     justify-content: center;
@@ -173,7 +167,8 @@ article:nth-of-type(odd).projet_texte {
     color: var(--green-color);
 }
 
-/* RESPONSIVE */
+
+/*Media queries de toute la page*/
 
 @media (max-width: 1400px) {
     .back_image_projet_first {
@@ -343,9 +338,9 @@ article:nth-of-type(odd).projet_texte {
 @media (max-width: 520px) {
 
     .back_image_projet_first {
-        position: relative !important; /* enlever absolute */
+        position: relative !important;
         max-width: 300px;
-        margin: 0 auto 10px auto; /* marge en bas pour le texte */
+        margin: 0 auto 10px auto;
         top: 0 !important;
         left: 0 !important;
         z-index: 1;
@@ -369,8 +364,8 @@ article:nth-of-type(odd).projet_texte {
     }
 
     .projet_texte {
-        padding: 0 15px; /* pareil ici */
-        width: 100%; /* pour éviter débordement */
+        padding: 0 15px;
+        width: 100%;
     }
 
 }

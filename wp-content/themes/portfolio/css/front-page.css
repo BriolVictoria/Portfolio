@@ -1,10 +1,6 @@
+/*Style de la page d'accueil*/
 .image_banniere {
-   /* background-image: url();
-    background-size: cover;       !* Pour que l'image couvre toute la div *!
-    background-position: center;  !* Centrer l'image *!
-    background-repeat: no-repeat; !* Ne pas répéter l'image *!*/
     width: 100%;
-    /*min-height: 100vh;            !* Oui, min-height fonctionne très bien *!*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,45 +9,55 @@
     text-align: center;
 }
 
+/*Element de la banniére de la page d'accueil*/
+
 .items_banniere {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 75em;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
+/*Titre de la banniére*/
+
 .titre_banniere {
     position: absolute;
-    font-size: 96px;
-    letter-spacing: 40px;
+    font-size: 6em;
+    letter-spacing: 2.5em;
     font-weight: 700;
     color: var(--white-color);
-    top: 52.8px;
+    top: 3.3em;
     text-align: center;
-    line-height: 10px;
+    line-height: 0.625em;
     text-shadow:
-            0 0 1px var(--white-color),
-            0 0 2px var(--white-color),
-            0 0 10px var(--white-color);
+            0 0 0.0625em var(--white-color),
+            0 0 0.125em var(--white-color),
+            0 0 0.625em var(--white-color);
 }
+
+/*Contenu de la banniére*/
+
 
 .content_banniere {
     position: absolute;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 300;
     text-align: center;
-    top: 424.6px;
+    top: 26.54em;
     color: var(--white-color);
     margin: 0;
 }
 
+/*Bouton de la banniére*/
+
+
 .bouton_banniere {
     position: absolute;
     background-color: var(--white-color);
-    padding: 9.5px 52.5px;
+    padding: 0.59375em 3.28125em;
     color: var(--green-color);
     top: 65%;
     text-align: center;
@@ -64,9 +70,12 @@
     background-color: var(--light-green-color);
     color: var(--green-color);
     transform: scale(1.05);
-    box-shadow: 0 0 10px var(--white-color), 0 0 20px var(--white-color);
+    box-shadow: 0 0 0.625em var(--white-color), 0 0 1.25em  var(--white-color);
 
 }
+
+/*Titre de la partie projet*/
+
 
 .titre_project {
     font-size: 40px;
@@ -76,12 +85,17 @@
     margin-bottom: 0;
 }
 
+/*Description de la partie projet*/
+
+
 .description_project {
     font-size: 24px;
     font-weight: 300;
     margin-top: 4px;
     margin-left: 218px;
 }
+
+/*Bouton de la partie projet*/
 
 .bouton_container_projet {
     display: flex;
@@ -90,9 +104,9 @@
 
 .bouton_projet {
     background-color: var(--dark-green-color);
-    padding: 9.5px 52.5px;
+    padding: 0.59375em 3.28125em;
     color: var(--white-color);
-    margin-top: 26px;
+    margin-top: 1.625em;
     text-decoration: none;
     border: none;
     display: inline-block;
@@ -106,20 +120,17 @@
     box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
 }
 
+/*Titre par projet de la partie projet*/
+
 .projet_title {
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 400;
-    margin-top: 26px;
+    margin-top: 1.625em;
 }
 
-.description_projet {
-    font-size: 24px;
-    text-align: center;
-    font-weight: 300;
-    margin-top: 15px;
-    width: 376px;
-}
+/*Descripton par projet de la partie projet*/
+
 
 .soulignement_carte_projet {
     background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
@@ -137,30 +148,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 26px;
-    gap: 52px;
+    margin-top: 1.625em;
+    gap: 3.25em;
 }
 
 .projet {
-    width: 300px;
+    width: 18.75em;
     padding: 1rem;
     transition: transform 0.2s ease;
 
 }
 
 .projet:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125em);
 }
 
 .trip_img {
-    width: 276px;
-}
-
-.description_project {
-    font-size: 24px;
-    font-weight: 300;
-    margin-top: 4px;
-    max-width: 600px;
+    width: 17.25em;
 }
 
 .projet_card {
@@ -171,83 +175,93 @@
 }
 
 .projet_title {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
-    margin-top: 26px;
+    margin-top: 1.625em;
 }
 
 .description_projet {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 300;
-    margin-top: 15px;
+    margin-top: 0.9375em;
     max-width: 90%;
 }
 
 .trip_img {
     width: 100%;
-    max-width: 276px;
+    max-width: 17.25em;
     height: auto;
     display: block;
 }
 
-/* Responsive à 885px */
+.projet, .titre_project, .description_project, .bouton_container_projet {
+    opacity: 0;
+    transform: translateY(1.25em);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media queries de toute la page */
 @media (max-width: 885px) {
     .titre_project {
-        font-size: 28px;
+        font-size: 1.75em;
         margin-left: 1rem;
-        margin-top: 60px;
+        margin-top: 3.75em;
         margin-bottom: 0;
     }
 
     .description_project {
-        font-size: 18px;
+        font-size: 1.125em;
         margin-left: 1rem;
         max-width: 90%;
     }
 
     .projet_container {
-        gap: 30px;
+        gap: 1.875em;
     }
 
     .projet {
-        width: 250px;
+        width: 1.875em;
         padding: 0.8rem;
     }
 
     .trip_img {
-        max-width: 220px;
+        max-width: 13.75em;
     }
 
     .description_projet {
-        font-size: 16px;
+        font-size: 1em;
         max-width: 90%;
     }
 }
 
-/* Responsive à 450px */
 @media (max-width: 450px) {
     .titre_project {
-        font-size: 24px;
+        font-size: 1.5em;
         margin-left: 0.5rem;
-        margin-top: 40px;
+        margin-top: 2.5em;
         margin-bottom: 0;
     }
 
     .description_project {
-        font-size: 14px;
+        font-size: 0.875em;
         margin-left: 0.5rem;
         max-width: 95%;
     }
 
     .projet_container {
         flex-direction: column;
-        align-items: center; /* Centre les projets verticalement */
-        gap: 20px;
+        align-items: center;
+        gap: 1.25em;
     }
 
     .projet {
         width: 100%;
-        max-width: 300px;
+        max-width: 18.75em;
         padding: 0.5rem;
         margin: 0 auto;
     }
@@ -257,7 +271,7 @@
     }
 
     .description_projet {
-        font-size: 14px;
+        font-size: 0.875em;
         max-width: 95%;
     }
 }
@@ -288,15 +302,15 @@
 
 @media (max-width: 1138px) {
     .titre_banniere{
-        font-size: 68px;
+        font-size: 4.25em;
     }
 
     .image_banniere {
-        max-height: 481px;
+        max-height: 30.0625em;
     }
 
     .content_banniere {
-        top: 317px;
+        top: 19.8125em;
     }
 
     .bouton_banniere {
@@ -306,44 +320,44 @@
 
 @media (max-width: 824px) {
     .titre_banniere{
-        font-size: 30px;
-        top: 1px;
+        font-size: 1.875em;
+        top: 0.0625em;
     }
 
     .image_banniere {
-        max-height: 246px;
+        max-height: 15.375em;
     }
 
     .content_banniere {
-        font-size: 20px;
+        font-size: 1.25em;
         top: 134px;
     }
 
     .bouton_banniere {
         top: 74%;
-        font-size: 20px;
+        font-size: 8.375em;
     }
 }
 
 @media (max-width: 530px) {
     .titre_banniere{
-        font-size: 22px;
-        letter-spacing: 30px;
+        font-size: 1.375em;
+        letter-spacing: 1.875em;
     }
 
     .image_banniere {
-        max-height: 186px;
+        max-height: 11.625em;
     }
 
     .content_banniere {
-        font-size: 16px;
-        top: 100px;
+        font-size: 1em;
+        top: 6.25em;
     }
 
     .bouton_banniere {
         top: 75%;
-        font-size: 17px;
-        padding: 5px 11px;
+        font-size: 1.0625em;
+        padding: 0.3125em 0.6875em;
     }
 }
 

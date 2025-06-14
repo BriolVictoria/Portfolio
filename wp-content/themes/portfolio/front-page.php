@@ -19,6 +19,8 @@ $projets = new WP_Query([
 
 ?>
 
+
+
 <section>
     <img class="image_banniere" src="<?= $img_banniere['url'] ?>" alt="<?= $img_banniere['alt'] ?>">
     <div class="items_banniere">
@@ -57,10 +59,4 @@ $projets = new WP_Query([
     </div>
 </section>
 
-
-
-<section>
-
-</section>
-
-<?php get_footer(); ?>
+<?php get_footer();?>

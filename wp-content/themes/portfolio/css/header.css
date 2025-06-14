@@ -1,8 +1,9 @@
+/*Style du header*/
 .head {
     position: fixed;
     z-index: 4;
-    box-shadow: 0 4px 40px var(--header-shadow-color); /* x=0, y=4px, flou=10px */;
-    max-height: 110px;
+    box-shadow:  0 0.25em 2.5em var(--header-shadow-color); /* x=0, y=4px, flou=10px */;
+    max-height: 6.88em;
 }
 
 body {
@@ -17,20 +18,26 @@ body {
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 5em;
 }
+
+/*Style du logo du header*/
 
 .logo {
-    margin-left: 23px;
-    width: 90px;
+    margin-left: 1.44em;
+    width: 5.63em;
 }
 
+/*Style du titre du header*/
+
 a.titre {
-    font-size: 24px;
+    font-size: 1.5em;
     text-decoration: none;
     color: var(--black-color);
     font-weight: 400;
 }
+
+/*Style des liens du header*/
 
 .items {
     display: flex;
@@ -53,8 +60,8 @@ a.titre {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 32px;
-    font-size: 24px;
+    gap: 2em;
+    font-size: 1.5em;
 }
 
 .lien {
@@ -65,17 +72,17 @@ a.titre {
 .gauche {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 2.19em;
 }
 
 .droite > p {
-    margin-right: 46px;
+    margin-right: 2.88em;
 }
 
 a strong {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .soulignement {
@@ -87,12 +94,12 @@ a strong {
 .gauche {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25em;
     flex-grow: 1;
 }
 
 .langue {
-    margin-right: 40px;
+    margin-right: 2.5em;
 }
 
 .lien {
@@ -106,9 +113,9 @@ a strong {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -0.19em;
     width: 100%;
-    height: 2px;
+    height: 0.125em;
     background-color: var(--green-color);
     transform: scaleX(0);
     transform-origin: left;
