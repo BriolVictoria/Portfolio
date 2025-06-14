@@ -1,9 +1,10 @@
 /*Style du header*/
+
 .head {
     position: fixed;
     z-index: 4;
-    box-shadow:  0 0.25em 2.5em var(--header-shadow-color); /* x=0, y=4px, flou=10px */;
-    max-height: 6.88em;
+    box-shadow: 0 4px 40px var(--header-shadow-color); /* x=0, y=4px, flou=10px */;
+    max-height: 110px;
 }
 
 body {
@@ -18,20 +19,20 @@ body {
 }
 
 main {
-    padding-top: 5em;
+    padding-top: 80px;
 }
 
 /*Style du logo du header*/
 
 .logo {
-    margin-left: 1.44em;
-    width: 5.63em;
+    margin-left: 23px;
+    width: 90px;
 }
 
 /*Style du titre du header*/
 
 a.titre {
-    font-size: 1.5em;
+    font-size: 24px;
     text-decoration: none;
     color: var(--black-color);
     font-weight: 400;
@@ -60,8 +61,8 @@ a.titre {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 2em;
-    font-size: 1.5em;
+    gap: 32px;
+    font-size: 24px;
 }
 
 .lien {
@@ -72,17 +73,17 @@ a.titre {
 .gauche {
     display: flex;
     align-items: center;
-    gap: 2.19em;
+    gap: 35px;
 }
 
 .droite > p {
-    margin-right: 2.88em;
+    margin-right: 46px;
 }
 
 a strong {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 400;
-    margin-bottom: 1.25em;
+    margin-bottom: 20px;
 }
 
 .soulignement {
@@ -94,12 +95,12 @@ a strong {
 .gauche {
     display: flex;
     align-items: center;
-    gap: 1.25em;
+    gap: 20px;
     flex-grow: 1;
 }
 
 .langue {
-    margin-right: 2.5em;
+    margin-right: 40px;
 }
 
 .lien {
@@ -113,9 +114,9 @@ a strong {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.19em;
+    bottom: -3px;
     width: 100%;
-    height: 0.125em;
+    height: 2px;
     background-color: var(--green-color);
     transform: scaleX(0);
     transform-origin: left;
@@ -134,19 +135,13 @@ ul.droite li.lien:last-child a {
     margin-right: 20px;
 }
 
-ul.droite li.lien:first-child a {
-    margin-left: 140px; /* ATTENTION CHANGER AU RéTRAICICEMENT*/
-}
 
-
-/* Style de base du bouton hamburger */
-.navigation_burger_menu {
+.nav_bgm {
     background: none;
     border: none;
     cursor: pointer;
     padding: 20px;
 }
-
 
 /* Style du SVG hamburger */
 .nav_bgm_svg .nav_element {
@@ -154,29 +149,10 @@ ul.droite li.lien:first-child a {
     transition: all 0.3s ease;
 }
 
-
-.droite {
-    background: var(--background-color);
-    opacity: 0;
-    transform: translateY(-20px);
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
-    background: var(--background-color);
-    display: flex;
-    justify-content: flex-start;
-}
-
-
 /* Menu visible par défaut sur desktop */
 @media (min-width: 886px) {
     .droite {
-        display: flex;
+        display: flex !important;
         position: static;
         opacity: 1;
         transform: none;
@@ -184,41 +160,43 @@ ul.droite li.lien:first-child a {
         flex-direction: row;
     }
 
-    .navigation_burger_menu, .nav_bgm_label, .nav_bgm_svg {
+    .nav_bgm {
         display: none; /* bouton caché sur desktop */
     }
 }
 
 /* Menu caché sur mobile (visible seulement si actif) */
 @media (max-width: 885px) {
-
     .droite {
-        padding: 50px 0 20px 0;
-        margin: 90px 0;
-    }
-
-    .navigation_burger_menu:not(:checked) ~ .droite {
-        left: 100%;
-    }
-
-    .navigation_burger_menu:checked ~ .droite {
+        background: var(--background-color);
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
         left: 0;
-        opacity: 1;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+
+        z-index: 999;
+        padding: 50px 0 20px 0;
+        background: var(--background-color);
+        display: flex;
+        justify-content: flex-start;
+        margin: 78px 0;
     }
 
-    .navigation_burger_menu:not(:checked) ~ .droite {
+    .droite.active {
+        opacity: 1;
+        transform: translateY(0);
         pointer-events: auto;
     }
 
-
-    ul.droite li.lien:last-child a {
-        margin-right: 0;
+    .nav_bgm {
+        display: flex;
     }
-
-    .navigation_burger_menu {
-        display: none;
-    }
-
 }
-
 
