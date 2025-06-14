@@ -75,7 +75,7 @@ $projets = new WP_Query($args);
 
         <?php endwhile; else: ?>
     </div>
-    <p><?=__hepl('Je n‘ai pas de projet récents à montrer pour le moment...')?></p>
+    <p><?=__hepl('Je n‘ai pas de projets récents à montrer pour le moment...')?></p>
     <?php endif; ?>
 
 </section>
