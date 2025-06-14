@@ -27,6 +27,12 @@ Le site est développé en **HTML**, **CSS** et **JavaScript**, et dévelloppé 
 
 ---
 
+## Maquettes utilisés pendant la réalisation du portfolio
+
+- Figma: https://www.figma.com/design/PW3qSY74Huy1GooDPYm7uN/PORTFOLIO?node-id=33-225&t=blZFwrBftdl136UE-1
+
+---
+
 ## Retrouvés mon portfolio
 -  [Victoria-briol.be](https://victoria-briol.be/)
 
