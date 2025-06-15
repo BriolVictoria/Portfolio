@@ -10,7 +10,7 @@
 
 
 </head>
-<body>
+<body  itemtype="https://schema.org/Person">
 
 
 <header class="head">
@@ -20,7 +20,7 @@
         <div class="gauche">
             <img class="logo" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Victoria Briol">
             <h1>
-                <a title="<?=__hepl('Vers la page d‘accueil')?>" class="titre" href="<?php echo esc_url(home_url('/')); ?>">
+                <a itemprop="name" title="<?=__hepl('Vers la page d‘accueil')?>" class="titre" href="<?php echo esc_url(home_url('/')); ?>">
                     <strong class="soulignement">Victoria Briol</strong>
                 </a>
             </h1>

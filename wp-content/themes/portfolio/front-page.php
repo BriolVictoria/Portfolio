@@ -25,7 +25,7 @@ $projets = new WP_Query([
     <img class="image_banniere" src="<?= $img_banniere['url'] ?>" alt="<?= $img_banniere['alt'] ?>">
     <div class="items_banniere">
         <h2 class="titre_banniere"><?= $titre_banniere ?></h2>
-        <p class="content_banniere"><?= $desc_banniere ?></p>
+        <p  itemprop="jobTitle" class="content_banniere"><?= $desc_banniere ?></p>
         <a title="<?=__hepl('Vers la page Me découvrir')?>" class="bouton_banniere" aria-label="Lien vers la page Me découvrir" href="<?=$lien_banniere['url']  ?>"><?= $lien_banniere['title'] ?></a>
     </div>
 </section>

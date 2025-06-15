@@ -39,7 +39,7 @@ $competences = new WP_Query([
         <img class="image_about" src="<?= $image_introduction['url'] ?>" alt="<?= $image_introduction['alt'] ?>">
         <div class="texte_about">
             <h3 class="titre_about"><strong class="soulignement_about"><?= $titre_introduction ?></strong></h3>
-            <p class="content_about"><?= $description_introduction ?></p>
+            <p class="content_about" itemprop="description"><?= $description_introduction ?></p>
         </div>
     </section>
 
