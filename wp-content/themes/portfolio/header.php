@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/all-template-css.css?v=<?= time(); ?> ">
+    <link rel="stylesheet" href="<?= portfolio_asset('css') ?>">
     <!--demander si on peut faire ça ou aps -->
-    <script defer src="<?= get_template_directory_uri(); ?>/js/main.js?v=<?= time(); ?>"></script>
+    <script defer src="<?= portfolio_asset('js') ?>"></script>
     <link rel="icon" href="<?= get_site_icon_url('50') ?>">
 
 
