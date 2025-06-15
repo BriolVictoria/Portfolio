@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 75em;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -25,17 +25,17 @@
 
 .titre_banniere {
     position: absolute;
-    font-size: 6em;
-    letter-spacing: 2.5em;
+    font-size: 96px;
+    letter-spacing: 40px;
     font-weight: 700;
     color: var(--white-color);
-    top: 3.3em;
+    top: 52.8px;
     text-align: center;
-    line-height: 0.625em;
+    line-height: 10px;
     text-shadow:
-            0 0 0.0625em var(--white-color),
-            0 0 0.125em var(--white-color),
-            0 0 0.625em var(--white-color);
+            0 0 1px var(--white-color),
+            0 0 2px var(--white-color),
+            0 0 10px var(--white-color);
 }
 
 /*Contenu de la banniére*/
@@ -43,10 +43,10 @@
 
 .content_banniere {
     position: absolute;
-    font-size: 2em;
+    font-size: 32px;
     font-weight: 300;
     text-align: center;
-    top: 26.54em;
+    top: 424.6px;
     color: var(--white-color);
     margin: 0;
 }
@@ -57,7 +57,7 @@
 .bouton_banniere {
     position: absolute;
     background-color: var(--white-color);
-    padding: 0.59375em 3.28125em;
+    padding: 9.5px 52.5px;
     color: var(--green-color);
     top: 65%;
     text-align: center;
@@ -70,7 +70,7 @@
     background-color: var(--light-green-color);
     color: var(--green-color);
     transform: scale(1.05);
-    box-shadow: 0 0 0.625em var(--white-color), 0 0 1.25em  var(--white-color);
+    box-shadow: 0 0 10px var(--white-color), 0 0 20px var(--white-color);
 
 }
 
@@ -104,9 +104,9 @@
 
 .bouton_projet {
     background-color: var(--dark-green-color);
-    padding: 0.59375em 3.28125em;
+    padding: 9.5px 52.5px;
     color: var(--white-color);
-    margin-top: 1.625em;
+    margin-top: 26px;
     text-decoration: none;
     border: none;
     display: inline-block;
@@ -123,10 +123,10 @@
 /*Titre par projet de la partie projet*/
 
 .projet_title {
-    font-size: 1.5em;
+    font-size: 24px;
     text-align: center;
     font-weight: 400;
-    margin-top: 1.625em;
+    margin-top: 26px;
 }
 
 /*Descripton par projet de la partie projet*/
@@ -148,23 +148,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1.625em;
-    gap: 3.25em;
+    margin-top: 26px;
+    gap: 52px;
 }
 
 .projet {
-    width: 18.75em;
+    width: 300px;
     padding: 1rem;
     transition: transform 0.2s ease;
 
 }
 
 .projet:hover {
-    transform: translateY(-0.3125em);
+    transform: translateY(-5px);
 }
 
 .trip_img {
-    width: 17.25em;
+    width: 276px;
 }
 
 .projet_card {
@@ -175,28 +175,28 @@
 }
 
 .projet_title {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 400;
-    margin-top: 1.625em;
+    margin-top: 26px;
 }
 
 .description_projet {
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: 300;
-    margin-top: 0.9375em;
+    margin-top: 15px;
     max-width: 90%;
 }
 
 .trip_img {
     width: 100%;
-    max-width: 17.25em;
+    max-width: 276px;
     height: auto;
     display: block;
 }
 
 .projet, .titre_project, .description_project, .bouton_container_projet {
     opacity: 0;
-    transform: translateY(1.25em);
+    transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -208,47 +208,47 @@
 /* Media queries de toute la page */
 @media (max-width: 885px) {
     .titre_project {
-        font-size: 1.75em;
+        font-size: 28px;
         margin-left: 1rem;
-        margin-top: 3.75em;
+        margin-top: 60px;
         margin-bottom: 0;
     }
 
     .description_project {
-        font-size: 1.125em;
+        font-size: 18px;
         margin-left: 1rem;
         max-width: 90%;
     }
 
     .projet_container {
-        gap: 1.875em;
+        gap: 30px;
     }
 
     .projet {
-        width: 1.875em;
+        width: 250px;
         padding: 0.8rem;
     }
 
     .trip_img {
-        max-width: 13.75em;
+        max-width: 220px;
     }
 
     .description_projet {
-        font-size: 1em;
+        font-size: 16px;
         max-width: 90%;
     }
 }
 
 @media (max-width: 450px) {
     .titre_project {
-        font-size: 1.5em;
+        font-size: 24px;
         margin-left: 0.5rem;
-        margin-top: 2.5em;
+        margin-top: 40px;
         margin-bottom: 0;
     }
 
     .description_project {
-        font-size: 0.875em;
+        font-size: 14px;
         margin-left: 0.5rem;
         max-width: 95%;
     }
@@ -256,12 +256,12 @@
     .projet_container {
         flex-direction: column;
         align-items: center;
-        gap: 1.25em;
+        gap: 20px;
     }
 
     .projet {
         width: 100%;
-        max-width: 18.75em;
+        max-width: 300px;
         padding: 0.5rem;
         margin: 0 auto;
     }
@@ -271,7 +271,7 @@
     }
 
     .description_projet {
-        font-size: 0.875em;
+        font-size: 14px;
         max-width: 95%;
     }
 }
@@ -302,15 +302,15 @@
 
 @media (max-width: 1138px) {
     .titre_banniere{
-        font-size: 4.25em;
+        font-size: 68px;
     }
 
     .image_banniere {
-        max-height: 30.0625em;
+        max-height: 481px;
     }
 
     .content_banniere {
-        top: 19.8125em;
+        top: 317px;
     }
 
     .bouton_banniere {
@@ -320,45 +320,43 @@
 
 @media (max-width: 824px) {
     .titre_banniere{
-        font-size: 1.875em;
-        top: 0.0625em;
+        font-size: 30px;
+        top: 1px;
     }
 
     .image_banniere {
-        max-height: 15.375em;
+        max-height: 246px;
     }
 
     .content_banniere {
-        font-size: 1.25em;
+        font-size: 20px;
         top: 134px;
     }
 
     .bouton_banniere {
         top: 74%;
-        font-size: 8.375em;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 530px) {
     .titre_banniere{
-        font-size: 1.375em;
-        letter-spacing: 1.875em;
+        font-size: 22px;
+        letter-spacing: 30px;
     }
 
     .image_banniere {
-        max-height: 11.625em;
+        max-height: 186px;
     }
 
     .content_banniere {
-        font-size: 1em;
-        top: 6.25em;
+        font-size: 16px;
+        top: 100px;
     }
 
     .bouton_banniere {
         top: 75%;
-        font-size: 1.0625em;
-        padding: 0.3125em 0.6875em;
+        font-size: 17px;
+        padding: 5px 11px;
     }
 }
-
-

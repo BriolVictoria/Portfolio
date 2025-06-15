@@ -2,15 +2,16 @@
 .about {
     display: flex;
     align-items: center;
-    gap: 3.75em;
+    gap: 60px;
 }
 
 /*Titre de la page à propos*/
 
 .titre_about {
-    font-size: 2.5em;
+    font-size: 40px;
     font-weight: 400;
-    margin: 0 0 1.25em;
+    margin: 0;
+    margin-bottom: 20px;
     display: inline-block;
 }
 
@@ -23,34 +24,34 @@
 /*Image de la page à propos*/
 
 .image_about {
-    width: 23.1875em;
-    margin-top: 5.625em;
-    margin-left: 14.8125em;
+    width: 371px;
+    margin-top: 90px;
+    margin-left: 237px;
     flex-shrink: 0;
     position: relative;
     z-index: 2;
-    margin-bottom: 5.9375em;
+    margin-bottom: 95px;
 }
 
 /*Description de la page à propos*/
 
 .content_about {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
     margin: 0;
     line-height: 1.6;
 }
 .texte_about {
-    max-width: 37.5em;
+    max-width: 600px;
 }
 
 /*Back image de la page à propos*/
 
 .back_image {
     position: absolute;
-    top: 3.8875em;
-    left: 12.5375em;
-    width: 19.125em;
+    top: 62.2px;
+    left: 200.6px;
+    width: 306px;
     aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
     background-color: var(--light-green-color);
     z-index: 1;
@@ -59,17 +60,17 @@
 /*Bouton contact de la page à propos*/
 
 .bouton_content_about {
-    font-size: 1.1875em;
+    font-size: 19px;
     text-align: center;
     font-weight: 300;
-    margin-top: 5.625em;
+    margin-top: 90px;
 }
 
 .bouton_about {
     background-color: var(--dark-green-color);
-    padding: 0.59375em 3.28125em;
+    padding: 9.5px 52.5px;
     color: var(--white-color);
-    margin-top: 1.625em;
+    margin-top: 26px;
     text-decoration: none;
     border: none;
     display: inline-block;
@@ -83,7 +84,7 @@
 
 .bouton_about:hover {
     transform: scale(1.05); /* Agrandissement visuel */
-    box-shadow: 0 0 0.75em var(--dark-green-color); /* Halo lumineux */
+    box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
 }
 
 .container {
@@ -94,28 +95,28 @@
 /*Titre du parcours et compétences de la page à propos*/
 
 .titre_parcours, .titre_competences {
-    font-size: 1.75em;
+    font-size: 28px;
     font-weight: 400;
-    margin-left: 13.5625em;
-    margin-top: 5.9375em;
+    margin-left: 217px;
+    margin-top: 95px;
     margin-bottom: 0;
 }
 /*Description du parcours et compétences de la page à propos*/
 
 .description_parcours, .description_competences {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 300;
-    margin-left: 13.5625em;
-    margin-top: 0.125em;
+    margin-left: 217px;
+    margin-top: 2px;
 }
 
 /*Image du parcours et compétences de la page à propos*/
 
 
 .image_parcours, .image_competences {
-    margin-top: 5.625em;
-    margin-left: 13.5625em;
-    width: 11.25em;
+    margin-top: 90px;
+    margin-left: 217px;
+    width: 180px;
 }
 
 .titre_competences {
@@ -126,45 +127,45 @@
 
 
 .title_par_parcours, .titre_par_competences {
-    font-size: 1.75em;
-    margin-left: 3.5625em;
-    margin-top: 1.625em;
+    font-size: 28px;
+    margin-left: 57px;
+    margin-top: 26px;
     font-weight: 400;
     margin-bottom: 0;
 }
 
 .titre_par_competences {
-    margin-left: 1em;
+    margin-left: 16px;
 }
 
 /*Description par parcours et compétences de la page à propos*/
 
 .description_par_parcours, .description_par_competences {
-    font-size: 1em; /* 16px /16 */
-    margin-left: 3.5625em; /* 57px /16 */
-    margin-top: 0.0625em; /* 1px /16 */
+    font-size: 16px;
+    margin-left: 57px;
+    margin-top: 1px;
     font-weight: 300;
 }
 
 /*Compétences de la page à propos*/
 
 .competence_img {
-    width: 2.8125em;
-    margin-left: 6.8125em; /
+    width: 45px;
+    margin-left: 109px;
 }
 
 .competences_par_projet {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
-    margin-left: 3.5625em;
-    margin-top: 2.5em;
+    gap: 8px;
+    margin-left: 57px;
+    margin-top: 40px;
 }
 
 .competence_content {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 16px;
 }
 
 .competence_fig {
@@ -173,7 +174,7 @@
 }
 
 .competence_img {
-    width: 2.8125em;
+    width: 45px;
     height: auto; /*Demander si on peut*/
     display: block;
     margin: 0;
@@ -181,36 +182,36 @@
 
 .competence_gauche {
     border-right: 1px var(--black-color) solid;
-    padding-right: 4.25em;
+    padding-right: 68px;
 }
 
 .titre_par_competences {
-    font-size: 1.75em;
+    font-size: 28px;
     font-weight: 400;
     margin: 0;
 
 }
 
 .description_par_competences {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 300;
-    margin: 0.25em 0 0;
+    margin: 4px 0 0;
     width: 120%;
 }
 
 .competences {
     display: flex;
     justify-content: space-between;
-    max-width: 68.75em; /* 1100px /16 */
-    gap: 3.75em;
+    max-width: 1100px;
+    gap: 60px;
 }
 
 .competences_par_projet:first-of-type {
-    margin-top: 8.1875em;
+    margin-top: 131px;
 }
 
 .competences_par_projet:not(:first-of-type) {
-    margin-top: 1.625em;
+    margin-top: 26px;
 }
 
 /*Parcours de la page à propos*/
@@ -219,22 +220,22 @@
 .parcours {
     display: flex;
     justify-content: space-between;
-    max-width: 68.75em;
-    gap: 3.75em;
+    max-width: 1100px;
+    gap: 60px;
 }
 
 .parcours_gauche {
     border-right: 1px var(--black-color) solid;
-    padding-right: 4.25em;
-    margin-bottom: 11.6875em;
+    padding-right: 68px;
+    margin-bottom: 187px;
 }
 
 .parcours_par_projet:first-of-type .parcours_par_projet_head {
-    margin-top:  6.25em;
+    margin-top: 100px;
 }
 
 .parcours_par_projet:not(:first-of-type) .parcours_par_projet_head {
-    margin-top: 1.625em;
+    margin-top: 26px;
 }
 
 
@@ -243,27 +244,27 @@
 
 @media (max-width: 1266px) {
     .image_about {
-        margin-left: 4.375em;
+        margin-left: 70px;
     }
 
     .back_image {
-        left: 1.375em;
+        left: 22px;
     }
 
     .titre_parcours, .titre_competences {
-        margin-left: 4.5em;
+        margin-left: 72px;
     }
 
     .description_parcours, .description_competences {
-        margin-left: 4.5em;
+        margin-left: 72px;
     }
 
     .image_parcours, .image_competences {
-        margin-left: 4.5em;
+        margin-left: 72px;
     }
 
     .description_par_parcours, .description_par_competences {
-        margin-right: 9.0625em;
+        margin-right: 145px;
     }
 }
 
@@ -272,29 +273,29 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.875em;
+        gap: 30px;
         max-width: 100%;
-        margin: 2.5em 0;
-        padding: 0 1.25em;
+        margin: 40px 0;
+        padding: 0 20px;
     }
 
     .image_about {
         width: 90%;
-        max-width: 29.5em;
-        margin: 2.5em auto 0 auto;
+        max-width: 472px;
+        margin: 40px auto 0 auto;
     }
 
     .titre_about {
-        margin: 0 0 1.25em 0;
-        font-size: 1.75em;
+        margin: 0 0 20px 0;
+        font-size: 28px;
         font-weight: 400;
         text-align: center;
         width: 100%;
     }
 
     .content_about {
-        margin: 0 0 1.25em 0;
-        font-size: 1.75em;
+        margin: 0 0 20px 0;
+        font-size: 15px;
         font-weight: 300;
         text-align: center;
         width: 100%;
@@ -303,9 +304,9 @@
 
     .back_image {
         position: absolute;
-        top: 0.2em;
-        left: 16.875em;
-        width: 25em;
+        top: 3.2px;
+        left: 270px;
+        width: 400px;
         aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
         background-color: var(--light-green-color);
         z-index: 1;
@@ -315,11 +316,11 @@
 
 @media (max-width: 715px) {
     .image_about {
-        max-width: 18.5625em;
+        max-width: 297px;
     }
 
     .back_image {
-        width: 16.875em;
+        width: 270px;
     }
 
 }
@@ -333,13 +334,13 @@
 
 @media (max-width: 1068px) {
     .titre_parcours, .titre_competences {
-        margin-left: 4.375em;
-        margin-top: 3.125em;
+        margin-left: 70px;
+        margin-top: 50px;
         width: 100%;
     }
 
     .description_parcours, .description_competences {
-        margin-left: 4.375em;
+        margin-left: 70px;
         width: 100%;
     }
 
@@ -349,7 +350,7 @@
 
     .competences_par_projet, .parcours_par_projet {
         margin-left: 0;
-        margin-right: 10.9375em;
+        margin-right: 175px;
         width: 100%;
     }
 
@@ -359,7 +360,7 @@
 
     .image_parcours, .image_competences {
         margin-top: 0;
-        margin-left: 1.6875em;
+        margin-left: 27px;
     }
 
 }
@@ -367,16 +368,16 @@
 @media (max-width: 1018px) {
     .image_parcours {
         display: block;
-        margin:1.25em auto;
+        margin: 20px auto;
         width: 100%;
-        max-width:  15.625em;
+        max-width: 250px;
     }
 
     .image_competences {
         display: block;
         margin: 20px auto;
         width: 100%;
-        max-width:  15.625em;
+        max-width: 250px;
 
     }
 
@@ -385,11 +386,11 @@
     }
 
     .parcours_gauche, .competence_gauche {
-        margin-bottom: -3.125em;
+        margin-bottom: -50px;
     }
 
     .parcours_gauche {
-        margin-bottom: -4.375em;
+        margin-bottom: -70px;
     }
 
     .parcours_par_projet:first-of-type .parcours_par_projet_head, .competences_par_projet:first-of-type {
@@ -397,15 +398,15 @@
     }
 
     .competences_droite {
-        margin-left: 4.375em;
+        margin-left: 70px;
     }
 
     .titre_parcours, .titre_competences {
-        margin-top: 5.625em;
+        margin-top: 90px;
     }
 
     .description_par_parcours, .title_par_parcours {
-        margin-left:  4.375em;
+        margin-left: 70px;
 
     }
 
@@ -416,9 +417,9 @@
     .parcours {
         display: flex;
         flex-direction: column;
-        gap: 1.875em;
-        margin-left: 1.25em;
-        margin-right: 1.25em;
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .parcours_gauche,
@@ -437,18 +438,18 @@
 
     .image_parcours {
         display: block;
-        margin: 1.25em auto;
+        margin: 20px auto;
         width: 100%;
-        max-width: 15.625em;
+        max-width: 250px;
     }
 
     /* COMPETENCES SECTION */
     .competences {
         display: flex;
         flex-direction: column;
-        gap: 1.875em;
-        margin-left: 1.25em;
-        margin-right: 1.25em;
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
 
     }
 
@@ -473,21 +474,20 @@
 
     .image_competences {
         display: block;
-        margin: 1.25em auto;
+        margin: 20px auto;
         width: 100%;
-        max-width: 15.625em;
+        max-width: 250px;
     }
 
     .bouton_content_about {
-        font-size: 1.0625em;
+        font-size: 17px;
     }
 
     .bouton_about {
-        padding: 0.59375em 3.28125em;
-        margin-top: 1.625em;
+        padding: 9.5px 52.5px;
+        margin-top: 26px;
     }
 
 }
-
 
 
