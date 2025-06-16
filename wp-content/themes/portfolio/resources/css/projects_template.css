@@ -1,0 +1,157 @@
+/*Style de la page projets*/
+
+.titre_projects {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.content_projects {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 40%;
+    margin: 26px auto 0;
+}
+
+
+.boutons_projects {
+    background-color: var(--dark-green-color);
+    padding: 9.5px 52.5px;
+    color: var(--white-color);
+    margin-top: 26px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+    margin-left: 15px;
+}
+
+.boutons_projects:hover {
+    transform: scale(1.05); /* Agrandissement visuel */
+    box-shadow: 0 0 12px var(--dark-green-color); /* Halo lumineux */
+}
+
+.boutons_projects.active {
+    border: 2px solid var(--dark-green-color);
+    background-color: transparent;
+    color: var(--dark-green-color);
+    font-weight: bold;
+}
+
+
+.soulignement_projets {
+    background-image: linear-gradient(to top, var(--dark-green-color) 40%, transparent 40%);
+    display: inline;
+    font-weight: 400;
+}
+
+.projets_page {
+    display: flex;
+    justify-content: center;
+}
+
+.projets_title_page, a {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 64px;
+    text-decoration: none;
+    color: var(--black-color);
+    text-align: center;
+}
+
+.grille_projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 projets par ligne */
+    padding: 60px 100px; /* marges à gauche et droite */
+}
+
+.projets_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projets_page:hover {
+    transition: transform 0.2s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--dark-green-color);
+}
+
+.projet_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Centre l’image et le titre horizontalement */
+}
+
+.projet_img {
+    display: block;
+    margin: 0 auto; /* ✅ Centre l’image si elle n’est pas en flex */
+    max-width: 100%; /* Bonus : s'assurer qu'elle reste responsive */
+    height: auto;
+}
+
+.projet_template {
+    margin-top: 90px;
+}
+
+/*Media queries de toute la page*/
+
+@media (max-width: 885px) {
+    .grille_projets {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 40px;
+        gap: 32px;
+    }
+
+    .content_projects {
+        width: 70%;
+    }
+
+    .boutons_projects {
+        font-size: 24px;
+        padding: 8px 32px;
+    }
+}
+
+/* Mobile - 1 colonne à 450px */
+@media (max-width: 595px) {
+    .grille_projets {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 24px;
+    }
+
+    .titre_projects {
+        font-size: 28px;
+    }
+
+    .content_projects {
+        font-size: 14px;
+        width: 90%;
+        margin-top: 16px;
+    }
+
+    .boutons_projects {
+        font-size: 18px;
+        padding: 6px 24px;
+        margin: 20px 0;
+        margin-left: 10px;
+    }
+
+    .projets_title_page, a {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .projet_template {
+        margin-top: 50px;
+    }
+}
+

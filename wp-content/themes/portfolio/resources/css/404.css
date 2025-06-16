@@ -1,0 +1,80 @@
+/*Style de la page 404*/
+.simple-404 {
+    text-align: center;
+    padding: 5.625em 1.25em;
+    background-color: var(--background-color);
+}
+
+/*titre de la page 404*/
+
+.simple-404 h1 {
+    font-size: 6em;
+    color: var(--green-color);
+    margin: 0;
+}
+
+/*Sous titre de la page 404*/
+
+.simple-404 h2 {
+    font-size: 2em;
+    color: var(--black-color);
+    margin: 15px 0;
+}
+
+/*Paragraphe de la page 404*/
+
+.simple-404 p {
+    font-size: 1em;
+    color: var(--dark-green-color);
+}
+
+/*Bouton de la page 404*/
+
+.simple-404 a {
+    display: inline-block;
+    margin-top: 1.5625em;
+    padding: 0.75em 1.5em;
+    background-color: var(--light-green-color);
+    color: var(--green-color);
+    text-decoration: none;
+    border-radius: 0.5em;
+    font-weight: bold;
+    border: 1px solid var(--green-color);
+    transition: all 0.3s ease;
+}
+
+/*Effet sur le bouton de la page 404*/
+
+.simple-404 a:hover {
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: var(--green-color); /* vert foncé */
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 16px;
+    animation: pulse 1.5s ease-in-out infinite;
+    transition: background-color 0.3s ease;
+}
+
+.pulse:hover {
+    background-color: var(--green-color);
+}

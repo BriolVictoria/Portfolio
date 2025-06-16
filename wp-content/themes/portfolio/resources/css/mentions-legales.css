@@ -1,0 +1,57 @@
+/*Style des mentions légales*/
+
+.page-legal-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    color: var(--black-color);
+}
+
+.legal-title {
+    font-size: 2rem;
+    color: var(--green-color);
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--dark-green-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.legal-section {
+    margin-bottom: 2.5rem;
+}
+
+.legal-section__title {
+    font-size: 1.3rem;
+    color: var(--green-color);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--green-color);
+    display: inline-block;
+}
+
+.legal-section__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--black-color);
+}
+
+.legal-section__text a {
+    color: var(--green-color);
+    text-decoration: underline;
+}
+
+.legal-section__text a {
+    font-size: 1rem;
+    color: var(--green-color);
+    text-decoration: underline;
+}
+
+.legal-title {
+    font-size: 2rem;
+    color: var(--green-color);
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--dark-green-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
